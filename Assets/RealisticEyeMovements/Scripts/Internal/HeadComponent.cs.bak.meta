@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c39dbdf8e552cb94cbfb2b9f9e8e0da3
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 29168
+  packageName: Realistic Eye Movements
+  packageVersion: 2.1.12
+  assetPath: Assets/RealisticEyeMovements/Scripts/Internal/HeadComponent.cs.bak
+  uploadId: 716087

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "core-physics-408222",
+  "private_key_id": "260e8703b066ba5e00b23d760a9dcbe532cc0127",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCTtp0gxg5g9LYe\n0jdrR83ouXA1ebfBnEG8j17OH7HVJ9B1UljuHwkyHTs/Q8qFV3PssPICXqUiUuix\n9esMe75THXrE0NCld6dAoD+n35lKhHtYSBeYe5eHacbYMiC2cUHmd5UXYHN2wSbo\nKtCyX66U5Ekf2fcof6nw420A9V6kMhifOF7dFpdLLKqc37/D4aM6TRvKnEhpINXF\nq2luFdR+5pKVJYUgbAj92YtGTMcYEc0SqCs7ZH5sR1ROygV/Wb7tat3/zMCMRT6L\nmnjBZUKXbAR75gRiGv7htHfl+qdVf8frUlKYjl687ND6/Jn4G1mnwF9NgX5sBuLC\nQ1IAgCr/AgMBAAECggEAJndPKso401nWlWcj5G2R+xFTXbGhPyt8WOizBRVu33Xb\nTLoRi40MfX7sP1jdg+TWvOQFWcWg1jPmAfXq7FjLIuTR5DAGrZhfty4j9Yj+Z8/h\nOQepEV3aA3rxu7ouF6SdxzEL48cLunipM5t2toTBN2fNfRxrRyIbtK3c5HuBVluJ\n7fIsr7YMpONXHoTKMDI0r0EP8bgiIicRbQ8h4ySAvpugYbTzh75gg+ASBPZNzHRe\njeMYNLpdZ8DErLXiLSfjQrMH+u4eyKvLGW8TukIq3U9CsjTy483h39HzyVm5sKBn\nwfCL00sbKnL3/fPoK7NR5Tki6Jyf+fIW58s4GQUZLQKBgQDNKmbZJn5ntO7tKRff\nj5vLB6VAqDhSGS/BzBJle3B9gjCRBYqiFBVz8m67fDs00p8Ge5hw0UNAE6WZNpOc\nO12dcWlIz1vmSZ8kh9liAg18zCvkUDDLQ5T6NVfxWUIG3W5MjuB7jZgGvng67zrm\nhd08TDWK3YB8LxZgWUQB62AvmwKBgQC4UAduTLwiyu3ugT6oqpaMDsd1VOUSFKxQ\n8PEW7xPVIwAybSrNYKfKA4p2rEfvfF5ti501Snp+Dr0KKSHADF7yDXklcE9Ytvdg\nOC1XrZOmwGGJ1Q6wps+NxYbaudlVg/gvlSuyAoaV84SuoeEvNfrM0jcqH0PgyWKH\nG2CPdkkSbQKBgQCCRu198CqOEd8xq0lkhV1JI/a0Qt1YjHO93KbF2AdLOzM5s0of\ntx8UPBpCZRV3alLem/bllIvekVszGevLZgsA4bYYLMvPRGqQmM7ZpDIKT9+DH8SM\nHcLoypyoPaRmlY7ngEZdTkD9706LJcPCA7jDBCVvo01mDcRos+YyTdMLBwKBgAhp\nZp1rFR8FYeyDq4dpGavUtNevAzFbDi43gNlKGf6dNVIX118+LQo0NSqLXFEavPiE\n6azX9FUyeQAwtmCcb+zeHoxN3uEuoIWcqr0Yp+dxWkI/HgeD5W8T976dwsR7XGVX\nioH6SYgocALEUpGkBgk5AtmCScfFiSCfaD3D6TvVAoGBAJdRcqPJ9tKtea0Afg2Z\nFRUbQ8oLokGwiKjQaUnBoe4DuSwHPMMIMQcRfCUFhfRiKOlxAjTjTS9TUfj0OKSA\n/2k8FASE1SPdszv4P38kjc58yeXOViD3s7b9TKgK/6KkR2jbSjpdMqYSKep0KnMj\nQhSMvIHHLxqyqaaiIMXRBCf0\n-----END PRIVATE KEY-----\n",
+  "client_email": "python-connect-holos-ets2@core-physics-408222.iam.gserviceaccount.com",
+  "client_id": "100523185740736252369",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/python-connect-holos-ets2%40core-physics-408222.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
