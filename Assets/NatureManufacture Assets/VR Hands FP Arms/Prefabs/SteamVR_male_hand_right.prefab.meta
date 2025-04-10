@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5e6059195e3baa440b99b8e6d994f653
+timeCreated: 1490095063
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 77815
+  packageName: VR Hands and FP Arms Pack
+  packageVersion: 1.3
+  assetPath: Assets/NatureManufacture Assets/VR Hands FP Arms/Prefabs/SteamVR_male_hand_right.prefab
+  uploadId: 534554

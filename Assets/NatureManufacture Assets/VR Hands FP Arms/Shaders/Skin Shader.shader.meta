@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8da52ee33a180464ea915ad9c61c53a2
+timeCreated: 1484299291
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 77815
+  packageName: VR Hands and FP Arms Pack
+  packageVersion: 1.3
+  assetPath: Assets/NatureManufacture Assets/VR Hands FP Arms/Shaders/Skin Shader.shader
+  uploadId: 534554
