@@ -1,0 +1,1149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3274683923794431740
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8821313572727559837, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: dd3fb065ee75df747922e82fa3801b2e, type: 2}
+    - target: {fileID: -8679921383154817045, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7823293702887809713, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0081a993ae30d024192e9370be44a4a4, type: 2}
+    - target: {fileID: -7823293702887809713, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0090a860fe8bceb489f65c768087cbc8, type: 2}
+    - target: {fileID: -7823293702887809713, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 741b3214ecdb3944896cb33d96c76d75, type: 2}
+    - target: {fileID: -5034437004033990505, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.0000023539244
+      objectReference: {fileID: 0}
+    - target: {fileID: -5034437004033990505, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -5034437004033990505, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0000023539244
+      objectReference: {fileID: 0}
+    - target: {fileID: -5034437004033990505, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -4195507540230606934, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_Name
+      value: CHILENO_FAENA_04Equipado
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708003931443530811, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5597843e8150dc745b06f5da3c5ab29e, type: 2}
+    - target: {fileID: 3535547322883724485, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.0000023539244
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535547322883724485, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535547322883724485, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0000023539244
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535547322883724485, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749798851108927208, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 579ebce072063704aa7fa853c989c940, type: 2}
+    - target: {fileID: 3855130287512419154, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c962379fa34c2014ca83de2a860302f1, type: 2}
+    - target: {fileID: 5866666021909216657, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 505cd9ea2b57b3948a645fdec34d1ac0, type: 2}
+    - target: {fileID: 5866666021909216657, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757882622435894171, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1b484e34973d3484391d7f76daceda55, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5542376646846988400}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8988763967274096533}
+  m_SourcePrefab: {fileID: 100100000, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+--- !u!137 &641411755435524807 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2708003931443530811, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &649473595323500891 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -6597378289169086553, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1679866413638741611 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5034437004033990505, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1797551151243457966 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3855130287512419154, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1836331330677307412 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3749798851108927208, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2045419434170014265 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3535547322883724485, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2428401706392761261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5542376646846988400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2428401706392761261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5ab26285e294787a92bc8bba92c30a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsOfInterest: []
+  lookAtPlayerRatio: 1
+  stareBackFactor: 1
+  noticePlayerDistance: 100
+  personalSpaceDistance: 0
+  minLookTime: 100
+  maxLookTime: 100
+  thirdPersonPlayerEyeCenter: {fileID: 0}
+  keepTargetEvenWhenLost: 1
+  avoidLookingThroughPlayer: 0
+  OnStartLookingAtPlayer:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStopLookingAtPlayer:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerEntersPersonalSpace:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerExitsPersonalSpace:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLookAwayFromShyness:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8988763967274096533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2428401706392761261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0359b2b84d8484d2281221cfda5470e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainWeight: 1
+  headChangeToNewTargetSpeed: 1
+  headTrackTargetSpeed: 1
+  headSpeedModifier: 0
+  headWeight: 0.75
+  bodyWeight: 0.1
+  neckHorizWeight: 0.5
+  neckVertWeight: 0.5
+  headPitchAngle: 0
+  headRollAngle: 0
+  headYawAngle: 0
+  neckPitchAngle: 0
+  neckRollAngle: 0
+  neckYawAngle: 0
+  useUpInsteadOfSpineAngle: 30
+  maxHeadPitchUpAngle: 65
+  maxHeadPitchDownAngle: 65
+  maxHeadYawAngle: 65
+  resetHeadAtFrameStart: 0
+  headBoneNonMecanim: {fileID: 0}
+  headTarget: {fileID: 0}
+  neckBoneNonMecanim: {fileID: 0}
+  spineBoneNonMecanim: {fileID: 0}
+  forwardInHeadSpace: {x: 0, y: -0.0000011324883, z: 1}
+  forwardInNeckSpace: {x: 0, y: 0.24498172, z: 0.9695277}
+  character_From_Head_Q: {x: -0.0000005662441, y: 0, z: 0, w: 1}
+  character_From_Neck_Q: {x: 0.12343478, y: 0, z: 0, w: 0.99235284}
+  headBase_From_Head_Q: {x: -0.0000005662441, y: 0, z: 0, w: 1}
+  spineBaseLocalQ: {x: 0.105412126, y: 0, z: 0, w: 0.99442863}
+  headBaseLocalQ: {x: 0.105412126, y: 0, z: 0, w: 0.99442863}
+  spineBaseLocalPos: {x: 9.797034e-10, y: 0.007725161, z: -0.036027815}
+  headBaseLocalPos: {x: 9.797034e-10, y: 0.3321217, z: 0.03352773}
+  headComponent:
+    headControl: 1
+    headAnimationType: 0
+  eyesWeight: 1
+  useMicroSaccades: 1
+  useMacroSaccades: 1
+  saccadeSpeed: 0.5
+  macroSaccadesPerMinute: 10
+  microSaccadesPerMinuteLookingIdle: 45
+  microSaccadesPerMinuteLookingAtPOI: 80
+  useHeadJitter: 1
+  headJitterFrequency: 0.2
+  headJitterAmplitude: 1
+  kDrawSightlinesInEditor: 0
+  areUpdatedControlledExternally: 0
+  updateType: 0
+  controlData:
+    eyeControl: 1
+    leftEye: {fileID: 1679866413638741611}
+    rightEye: {fileID: 2045419434170014265}
+    maxEyeUpBoneAngle: 20
+    maxEyeDownBoneAngle: 20
+    maxEyeUpEyeballAngle: 20
+    maxEyeDownEyeballAngle: 20
+    isEyeBallDefaultSet: 0
+    isEyeBoneDefaultSet: 1
+    isEyeBallLookUpSet: 0
+    isEyeBoneLookUpSet: 1
+    isEyeBallLookDownSet: 0
+    isEyeBoneLookDownSet: 1
+    isEyeBallLookLeftSet: 0
+    isEyeBoneLookLeftSet: 1
+    isEyeBallLookRightSet: 0
+    isEyeBoneLookRightSet: 1
+    leftBoneEyeRotationLimiter:
+      transform: {fileID: 1679866413638741611}
+      defaultQ: {x: 0.7071068, y: -0.0000023539244, z: -0.7071068, w: -0.0000023539244}
+      lookUpQ: {x: 0.7004934, y: 0.09648378, z: -0.7004934, w: 0.09648378}
+      lookDownQ: {x: 0.69375163, y: -0.13677976, z: -0.69375163, w: -0.13677976}
+      lookLeftQ: {x: -0.6643025, y: -0.24228519, z: 0.66430265, w: 0.24228485}
+      lookRightQ: {x: 0.6875115, y: -0.16531208, z: -0.6875126, w: 0.16530682}
+      maxDownAngle: 22.306286
+      maxLeftAngle: 40.07592
+      maxRightAngle: 27.03974
+      maxUpAngle: 15.685
+      isLookUpSet: 1
+      isLookDownSet: 1
+      isLookLeftSet: 1
+      isLookRightSet: 1
+    rightBoneEyeRotationLimiter:
+      transform: {fileID: 2045419434170014265}
+      defaultQ: {x: 0.7071068, y: -0.0000023539244, z: -0.7071068, w: -0.0000023539244}
+      lookUpQ: {x: 0.7004934, y: 0.09648378, z: -0.7004934, w: 0.09648378}
+      lookDownQ: {x: 0.69375163, y: -0.13677976, z: -0.69375163, w: -0.13677976}
+      lookLeftQ: {x: -0.6875333, y: -0.16522093, z: 0.6875334, w: 0.1652206}
+      lookRightQ: {x: 0.6686319, y: -0.23006836, z: -0.6686334, w: 0.23006341}
+      maxDownAngle: 22.306286
+      maxLeftAngle: 27.024952
+      maxRightAngle: 37.975056
+      maxUpAngle: 15.685
+      isLookUpSet: 1
+      isLookDownSet: 1
+      isLookLeftSet: 1
+      isLookRightSet: 1
+    leftEyeballEyeRotationLimiter:
+      transform: {fileID: 0}
+      defaultQ: {x: 0, y: 0, z: 0, w: 0}
+      lookUpQ: {x: 0, y: 0, z: 0, w: 0}
+      lookDownQ: {x: 0, y: 0, z: 0, w: 0}
+      lookLeftQ: {x: 0, y: 0, z: 0, w: 0}
+      lookRightQ: {x: 0, y: 0, z: 0, w: 0}
+      maxDownAngle: 20
+      maxLeftAngle: 30
+      maxRightAngle: 30
+      maxUpAngle: 8
+      isLookUpSet: 0
+      isLookDownSet: 0
+      isLookLeftSet: 0
+      isLookRightSet: 0
+    rightEyeballEyeRotationLimiter:
+      transform: {fileID: 0}
+      defaultQ: {x: 0, y: 0, z: 0, w: 0}
+      lookUpQ: {x: 0, y: 0, z: 0, w: 0}
+      lookDownQ: {x: 0, y: 0, z: 0, w: 0}
+      lookLeftQ: {x: 0, y: 0, z: 0, w: 0}
+      lookRightQ: {x: 0, y: 0, z: 0, w: 0}
+      maxDownAngle: 20
+      maxLeftAngle: 30
+      maxRightAngle: 30
+      maxUpAngle: 8
+      isLookUpSet: 0
+      isLookDownSet: 0
+      isLookLeftSet: 0
+      isLookRightSet: 0
+    eyelidControl: 2
+    eyelidBoneMode: 0
+    upperEyeLidLeft: {fileID: 0}
+    upperEyeLidRight: {fileID: 0}
+    lowerEyeLidLeft: {fileID: 0}
+    lowerEyeLidRight: {fileID: 0}
+    upperLeftEyelidBones: []
+    upperRightEyelidBones: []
+    lowerLeftEyelidBones: []
+    lowerRightEyelidBones: []
+    isEyelidBonesDefaultSet: 0
+    isEyelidBonesClosedSet: 0
+    isEyelidBonesLookUpSet: 0
+    isEyelidBonesLookDownSet: 0
+    upperLeftLimiter:
+      transform: {fileID: 0}
+      defaultQ: {x: 0, y: 0, z: 0, w: 0}
+      closedQ: {x: 0, y: 0, z: 0, w: 0}
+      lookUpQ: {x: 0, y: 0, z: 0, w: 0}
+      lookDownQ: {x: 0, y: 0, z: 0, w: 0}
+      eyeMaxDownAngle: 0
+      eyeMaxUpAngle: 0
+      defaultPos: {x: 0, y: 0, z: 0}
+      closedPos: {x: 0, y: 0, z: 0}
+      lookUpPos: {x: 0, y: 0, z: 0}
+      lookDownPos: {x: 0, y: 0, z: 0}
+      isLookUpSet: 0
+      isLookDownSet: 0
+      isDefaultPosSet: 0
+      isClosedPosSet: 0
+      isLookUpPosSet: 0
+      isLookDownPosSet: 0
+    upperRightLimiter:
+      transform: {fileID: 0}
+      defaultQ: {x: 0, y: 0, z: 0, w: 0}
+      closedQ: {x: 0, y: 0, z: 0, w: 0}
+      lookUpQ: {x: 0, y: 0, z: 0, w: 0}
+      lookDownQ: {x: 0, y: 0, z: 0, w: 0}
+      eyeMaxDownAngle: 0
+      eyeMaxUpAngle: 0
+      defaultPos: {x: 0, y: 0, z: 0}
+      closedPos: {x: 0, y: 0, z: 0}
+      lookUpPos: {x: 0, y: 0, z: 0}
+      lookDownPos: {x: 0, y: 0, z: 0}
+      isLookUpSet: 0
+      isLookDownSet: 0
+      isDefaultPosSet: 0
+      isClosedPosSet: 0
+      isLookUpPosSet: 0
+      isLookDownPosSet: 0
+    lowerLeftLimiter:
+      transform: {fileID: 0}
+      defaultQ: {x: 0, y: 0, z: 0, w: 0}
+      closedQ: {x: 0, y: 0, z: 0, w: 0}
+      lookUpQ: {x: 0, y: 0, z: 0, w: 0}
+      lookDownQ: {x: 0, y: 0, z: 0, w: 0}
+      eyeMaxDownAngle: 0
+      eyeMaxUpAngle: 0
+      defaultPos: {x: 0, y: 0, z: 0}
+      closedPos: {x: 0, y: 0, z: 0}
+      lookUpPos: {x: 0, y: 0, z: 0}
+      lookDownPos: {x: 0, y: 0, z: 0}
+      isLookUpSet: 0
+      isLookDownSet: 0
+      isDefaultPosSet: 0
+      isClosedPosSet: 0
+      isLookUpPosSet: 0
+      isLookDownPosSet: 0
+    lowerRightLimiter:
+      transform: {fileID: 0}
+      defaultQ: {x: 0, y: 0, z: 0, w: 0}
+      closedQ: {x: 0, y: 0, z: 0, w: 0}
+      lookUpQ: {x: 0, y: 0, z: 0, w: 0}
+      lookDownQ: {x: 0, y: 0, z: 0, w: 0}
+      eyeMaxDownAngle: 0
+      eyeMaxUpAngle: 0
+      defaultPos: {x: 0, y: 0, z: 0}
+      closedPos: {x: 0, y: 0, z: 0}
+      lookUpPos: {x: 0, y: 0, z: 0}
+      lookDownPos: {x: 0, y: 0, z: 0}
+      isLookUpSet: 0
+      isLookDownSet: 0
+      isDefaultPosSet: 0
+      isClosedPosSet: 0
+      isLookUpPosSet: 0
+      isLookDownPosSet: 0
+    upperLeftLimiters: []
+    upperRightLimiters: []
+    lowerLeftLimiters: []
+    lowerRightLimiters: []
+    eyeWidenOrSquint: 0
+    blendshapesForBlinking:
+    - skinnedMeshRenderer: {fileID: 7308740622869474369}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 16
+      name: Eye_Blink_L
+    - skinnedMeshRenderer: {fileID: 7308740622869474369}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 17
+      name: Eye_Blink_R
+    - skinnedMeshRenderer: {fileID: 5856137252489736990}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 8
+      name: Eye_Blink_L
+    - skinnedMeshRenderer: {fileID: 5856137252489736990}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 9
+      name: Eye_Blink_R
+    - skinnedMeshRenderer: {fileID: 649473595323500891}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 7
+      name: Eye_Blink_L
+    - skinnedMeshRenderer: {fileID: 649473595323500891}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 8
+      name: Eye_Blink_R
+    blendshapesForLookingUp:
+    - skinnedMeshRenderer: {fileID: 7308740622869474369}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 26
+      name: Eye_L_Look_Up
+    - skinnedMeshRenderer: {fileID: 7308740622869474369}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 27
+      name: Eye_R_Look_Up
+    - skinnedMeshRenderer: {fileID: 5856137252489736990}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 18
+      name: Eye_L_Look_Up
+    - skinnedMeshRenderer: {fileID: 5856137252489736990}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 19
+      name: Eye_R_Look_Up
+    - skinnedMeshRenderer: {fileID: 649473595323500891}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 17
+      name: Eye_L_Look_Up
+    - skinnedMeshRenderer: {fileID: 649473595323500891}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 18
+      name: Eye_R_Look_Up
+    blendshapesForLookingDown:
+    - skinnedMeshRenderer: {fileID: 7308740622869474369}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 28
+      name: Eye_L_Look_Down
+    - skinnedMeshRenderer: {fileID: 7308740622869474369}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 29
+      name: Eye_R_Look_Down
+    - skinnedMeshRenderer: {fileID: 5856137252489736990}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 20
+      name: Eye_L_Look_Down
+    - skinnedMeshRenderer: {fileID: 5856137252489736990}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 21
+      name: Eye_R_Look_Down
+    - skinnedMeshRenderer: {fileID: 649473595323500891}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 19
+      name: Eye_L_Look_Down
+    - skinnedMeshRenderer: {fileID: 649473595323500891}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 20
+      name: Eye_R_Look_Down
+    blendshapesForLookingLeft:
+    - skinnedMeshRenderer: {fileID: 7308740622869474369}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 22
+      name: Eye_L_Look_L
+    - skinnedMeshRenderer: {fileID: 7308740622869474369}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 23
+      name: Eye_R_Look_L
+    - skinnedMeshRenderer: {fileID: 5856137252489736990}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 14
+      name: Eye_L_Look_L
+    - skinnedMeshRenderer: {fileID: 5856137252489736990}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 15
+      name: Eye_R_Look_L
+    - skinnedMeshRenderer: {fileID: 649473595323500891}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 13
+      name: Eye_L_Look_L
+    - skinnedMeshRenderer: {fileID: 649473595323500891}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 14
+      name: Eye_R_Look_L
+    blendshapesForLookingRight:
+    - skinnedMeshRenderer: {fileID: 7308740622869474369}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 24
+      name: Eye_L_Look_R
+    - skinnedMeshRenderer: {fileID: 7308740622869474369}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 25
+      name: Eye_R_Look_R
+    - skinnedMeshRenderer: {fileID: 5856137252489736990}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 16
+      name: Eye_L_Look_R
+    - skinnedMeshRenderer: {fileID: 5856137252489736990}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 17
+      name: Eye_R_Look_R
+    - skinnedMeshRenderer: {fileID: 649473595323500891}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 15
+      name: Eye_L_Look_R
+    - skinnedMeshRenderer: {fileID: 649473595323500891}
+      defaultWeight: 0
+      positionWeight: 100
+      index: 16
+      name: Eye_R_Look_R
+    blendshapesConfigs:
+    - skinnedMeshRenderer: {fileID: 2947154775173425055}
+      blendShapeCount: 0
+      blendshapeWeights: []
+    - skinnedMeshRenderer: {fileID: 7308740622869474369}
+      blendShapeCount: 148
+      blendshapeWeights:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - skinnedMeshRenderer: {fileID: 5830369639929753429}
+      blendShapeCount: 2
+      blendshapeWeights:
+      - 0
+      - 0
+    - skinnedMeshRenderer: {fileID: 5856137252489736990}
+      blendShapeCount: 120
+      blendshapeWeights:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0.02
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - skinnedMeshRenderer: {fileID: 649473595323500891}
+      blendShapeCount: 115
+      blendshapeWeights:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0.02
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - skinnedMeshRenderer: {fileID: 4936258611784798025}
+      blendShapeCount: 0
+      blendshapeWeights: []
+    - skinnedMeshRenderer: {fileID: 6367054958931848571}
+      blendShapeCount: 37
+      blendshapeWeights:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - skinnedMeshRenderer: {fileID: 4475470263397471155}
+      blendShapeCount: 15
+      blendshapeWeights:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - skinnedMeshRenderer: {fileID: 1836331330677307412}
+      blendShapeCount: 0
+      blendshapeWeights: []
+    - skinnedMeshRenderer: {fileID: 8945356924357645286}
+      blendShapeCount: 0
+      blendshapeWeights: []
+    - skinnedMeshRenderer: {fileID: 5105826927361699175}
+      blendShapeCount: 0
+      blendshapeWeights: []
+    - skinnedMeshRenderer: {fileID: 3685488897439539097}
+      blendShapeCount: 0
+      blendshapeWeights: []
+    - skinnedMeshRenderer: {fileID: 641411755435524807}
+      blendShapeCount: 0
+      blendshapeWeights: []
+    - skinnedMeshRenderer: {fileID: 1797551151243457966}
+      blendShapeCount: 0
+      blendshapeWeights: []
+    isEyelidBlendshapeDefaultSet: 1
+    isEyelidBlendshapeClosedSet: 1
+    isEyelidBlendshapeLookUpSet: 1
+    isEyelidBlendshapeLookDownSet: 1
+    isEyelidBlendshapeLookLeftSet: 1
+    isEyelidBlendshapeLookRightSet: 1
+  eyelidsWeight: 1
+  kMinNextBlinkTime: 3
+  kMaxNextBlinkTime: 15
+  blinkSpeed: 1
+  eyelidsFollowEyesVertically: 1
+  autoBlinking: 1
+  idleTargetHorizAngle: 10
+  crossEyeCorrection: 1
+  eyesRootLocalQ: {x: -0.49999982, y: 0.5000003, z: 0.49999982, w: 0.5000003}
+  eyeRoot_From_leftEyeAnchor_Q: {x: 0.7071048, y: 0, z: 0, w: -0.70710886}
+  eyeRoot_From_rightEyeAnchor_Q: {x: 0.7071048, y: 0, z: 0, w: -0.70710886}
+  leftEyeAnchor_From_eyeRoot_Q: {x: 0, y: 0, z: 0, w: 0}
+  rightEyeAnchor_From_eyeRoot_Q: {x: 0, y: 0, z: 0, w: 0}
+  originalLeftEyeLocalQ: {x: 0.7071068, y: -0.0000023539244, z: -0.7071068, w: -0.0000023539244}
+  originalRightEyeLocalQ: {x: 0.7071068, y: -0.0000023539244, z: -0.7071068, w: -0.0000023539244}
+  areRotationOffsetsSet: 1
+--- !u!137 &2947154775173425055 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -8821313572727559837, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &3685488897439539097 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7037016196399197851, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &4475470263397471155 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7823293702887809713, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &4936258611784798025 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7634479467738841525, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &5105826927361699175 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7757882622435894171, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &5830369639929753429 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 9051005867030159785, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &5856137252489736990 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -272698260703527454, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &6367054958931848571 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8443775884153234311, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &7308740622869474369 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5197118176682910397, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &8945356924357645286 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -3362419705094071014, guid: ae9be2b5cd7220e4790c214f8ee9a6ef, type: 3}
+  m_PrefabInstance: {fileID: 3274683923794431740}
+  m_PrefabAsset: {fileID: 0}
