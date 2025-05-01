@@ -808,14 +808,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationTrigger: Clip1
   audioSource: {fileID: 1191429489}
-  peruvianAggressorAudio: {fileID: 8300000, guid: bf58b9db8f616a743aa4a4c9e9c82ed3, type: 3}
-  chileanAggressorAudio: {fileID: 8300000, guid: 0389d3091aa3b4c4892aa7abfe3511ac, type: 3}
-  colombianAggressorAudio: {fileID: 0}
-  argentinianAggressorAudio: {fileID: 8300000, guid: 0c8a6a07622b93349a513140c3187e0e, type: 3}
-  peruvianAggressorPrefab: {fileID: 893811968526298102, guid: 0228adf7e65aa0747848898804d551ff, type: 3}
-  chileanAggressorPrefab: {fileID: 356910156284278295, guid: cbdc49aeb2be33c4bb33e2a8bfb1c564, type: 3}
-  colombianAggressorPrefab: {fileID: 0}
-  argentinianAggressorPrefab: {fileID: 5533118405606745295, guid: bec78bd77c3715648b16a0f87493dde5, type: 3}
+  aggressorDataList:
+  - countryKey: chile
+    prefab: {fileID: 783599238398140250, guid: 360dcff1cadfbd84caab57422e69bc80, type: 3}
+    audioClip: {fileID: 8300000, guid: 9dced341c4029b042a67b86dd65e4d9e, type: 3}
   spawnPoint: {fileID: 1191429488}
   destroyAggressorOnFinish: 0
   OnPlayStepEvent:
@@ -17142,14 +17138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationTrigger: Clip3
   audioSource: {fileID: 1191429489}
-  peruvianAggressorAudio: {fileID: 8300000, guid: 003560cbebf2e574ca704557a36e70b1, type: 3}
-  chileanAggressorAudio: {fileID: 8300000, guid: 3753192a188e9c44f8b8afed5606afed, type: 3}
-  colombianAggressorAudio: {fileID: 0}
-  argentinianAggressorAudio: {fileID: 8300000, guid: 2652cb2d7230d22429f56afa2fd493cd, type: 3}
-  peruvianAggressorPrefab: {fileID: 893811968526298102, guid: 0228adf7e65aa0747848898804d551ff, type: 3}
-  chileanAggressorPrefab: {fileID: 356910156284278295, guid: cbdc49aeb2be33c4bb33e2a8bfb1c564, type: 3}
-  colombianAggressorPrefab: {fileID: 0}
-  argentinianAggressorPrefab: {fileID: 5533118405606745295, guid: bec78bd77c3715648b16a0f87493dde5, type: 3}
+  aggressorDataList: []
   spawnPoint: {fileID: 1191429488}
   destroyAggressorOnFinish: 0
   OnPlayStepEvent:
@@ -27810,6 +27799,9 @@ MonoBehaviour:
   chileanAudio: {fileID: 8300000, guid: d9b554eea37f54840a25a3a2fc33769f, type: 3}
   colombianAudio: {fileID: 0}
   argentinianAudio: {fileID: 8300000, guid: f7a13fdf20332f743ab8e792886819b3, type: 3}
+  onStartStep:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &880156843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30451,7 +30443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2609c54f376cffc4da1ab9401cc1a36f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skeletonType: 5
+  _skeletonType: 1
   _updateRootPose: 0
   _updateRootScale: 1
   _enablePhysicsCapsules: 0
@@ -36573,14 +36565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationTrigger: Clip2
   audioSource: {fileID: 1191429489}
-  peruvianAggressorAudio: {fileID: 8300000, guid: 576b3eb5029c22f40af25186b9020ce1, type: 3}
-  chileanAggressorAudio: {fileID: 8300000, guid: b54085f0671d31641a0f79ca5a4c4e9e, type: 3}
-  colombianAggressorAudio: {fileID: 0}
-  argentinianAggressorAudio: {fileID: 8300000, guid: e3129cfeda88cc345bf23f3bd6ed57ac, type: 3}
-  peruvianAggressorPrefab: {fileID: 893811968526298102, guid: 0228adf7e65aa0747848898804d551ff, type: 3}
-  chileanAggressorPrefab: {fileID: 356910156284278295, guid: cbdc49aeb2be33c4bb33e2a8bfb1c564, type: 3}
-  colombianAggressorPrefab: {fileID: 0}
-  argentinianAggressorPrefab: {fileID: 5533118405606745295, guid: bec78bd77c3715648b16a0f87493dde5, type: 3}
+  aggressorDataList: []
   spawnPoint: {fileID: 1191429488}
   destroyAggressorOnFinish: 0
   OnPlayStepEvent:
@@ -39217,7 +39202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2609c54f376cffc4da1ab9401cc1a36f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skeletonType: 4
+  _skeletonType: 0
   _updateRootPose: 0
   _updateRootScale: 1
   _enablePhysicsCapsules: 0
@@ -53972,6 +53957,9 @@ MonoBehaviour:
   chileanAudio: {fileID: 8300000, guid: ef4472176cdf6da478e0104b6cd4f68d, type: 3}
   colombianAudio: {fileID: 0}
   argentinianAudio: {fileID: 8300000, guid: b3f578dff8f8b194da7ed28f715ef9eb, type: 3}
+  onStartStep:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1924818779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 8d00a9263df927f4ea26b92fa915989b, type: 3}

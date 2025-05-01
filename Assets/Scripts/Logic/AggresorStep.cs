@@ -1,37 +1,52 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 [System.Serializable]
-public class AggresorStep : MonoBehaviour ,IStep
-{   
-     [Header("Animator Settings")]
+public class AggressorData
+{
+    public string countryKey;
+    public GameObject prefab;
+    public AudioClip audioClip;
+}
+
+public class AggresorStep : MonoBehaviour, IStep
+{
+    [Header("Animator Settings")]
     [SerializeField] private string animationTrigger;
 
     [Header("Audio Settings")]
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip peruvianAggressorAudio;
-    [SerializeField] private AudioClip chileanAggressorAudio;
-    [SerializeField] private AudioClip colombianAggressorAudio;
-    [SerializeField] private AudioClip argentinianAggressorAudio;
 
-    [Header("Prefab Settings")]
-    [SerializeField] private GameObject peruvianAggressorPrefab;
-    [SerializeField] private GameObject chileanAggressorPrefab;
-    [SerializeField] private GameObject colombianAggressorPrefab;
-    [SerializeField] private GameObject argentinianAggressorPrefab;
+    [Header("Aggressor Settings")]
+    [SerializeField] private List<AggressorData> aggressorDataList;
     [SerializeField] private Transform spawnPoint;
 
     [Header("Settings")]
-    [SerializeField] private bool destroyAggressorOnFinish = false; // ✅ Nueva opción para destruir el agresor después de Execute()
+    [SerializeField] private bool destroyAggressorOnFinish = false;
 
     [Header("Events")]
     [SerializeField] private UnityEvent OnPlayStepEvent;
 
     public UnityEvent onStartStep { get; }
-    public UnityEvent OnStartStep => onStartStep; // Implementación de la interfaz
-    
+    public UnityEvent OnStartStep => onStartStep;
+
     private GameObject spawnedAggressor;
+    private Dictionary<string, AggressorData> aggressorDataDict;
+
+    private void Awake()
+    {
+        aggressorDataDict = new Dictionary<string, AggressorData>();
+
+        foreach (var data in aggressorDataList)
+        {
+            if (!string.IsNullOrEmpty(data.countryKey) && data.prefab != null)
+            {
+                aggressorDataDict[data.countryKey.ToLower()] = data;
+            }
+        }
+    }
 
     private void Start()
     {
@@ -41,7 +56,7 @@ public class AggresorStep : MonoBehaviour ,IStep
             return;
         }
 
-        // ✅ Buscar si ya hay un agresor en `spawnPoint`
+        // Ver si ya hay un agresor existente en el spawnPoint
         if (spawnPoint.childCount > 0)
         {
             spawnedAggressor = spawnPoint.GetChild(0).gameObject;
@@ -62,10 +77,10 @@ public class AggresorStep : MonoBehaviour ,IStep
         }
     }
 
-
     public IEnumerator Execute()
     {
         OnPlayStepEvent?.Invoke();
+
         if (audioSource == null || spawnPoint == null)
         {
             Debug.LogWarning("⚠ Faltan referencias en `AggresorStep`.");
@@ -78,18 +93,18 @@ public class AggresorStep : MonoBehaviour ,IStep
             yield break;
         }
 
-        // ✅ Activar el agresor si estaba desactivado
+        // Activar agresor
         spawnedAggressor.SetActive(true);
         Debug.Log("🎭 Agresor activado en `Execute()`.");
 
-        // Configurar animación del agresor
+        // Activar animación si aplica
         Animator aggressorAnimator = spawnedAggressor.GetComponentInChildren<Animator>();
-        if (aggressorAnimator != null && animationTrigger != "")
+        if (aggressorAnimator != null && !string.IsNullOrEmpty(animationTrigger))
         {
             aggressorAnimator.SetTrigger(animationTrigger);
         }
 
-        // Reproducir audio del agresor según el país
+        // Reproducir audio si aplica
         AudioClip clip = GetAggressorAudio();
         if (clip != null)
         {
@@ -98,7 +113,7 @@ public class AggresorStep : MonoBehaviour ,IStep
             yield return new WaitForSeconds(clip.length);
         }
 
-        // ✅ Si está activado `destroyAggressorOnFinish`, destruir el agresor al terminar `Execute()`
+        // Destruir agresor si se indicó
         if (destroyAggressorOnFinish)
         {
             Debug.Log("🗑️ Destruyendo agresor: " + spawnedAggressor.name);
@@ -109,38 +124,26 @@ public class AggresorStep : MonoBehaviour ,IStep
 
     private AudioClip GetAggressorAudio()
     {
-        string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile");
-
-        return selectedCountry switch
-        {
-            "Peru" or "Perú" => peruvianAggressorAudio,
-            "Colombia" => colombianAggressorAudio,
-            "Argentina" => argentinianAggressorAudio,
-            _ => chileanAggressorAudio
-        };
+        string key = PlayerPrefs.GetString("SelectedCountry", "Australia").ToLower();
+        return aggressorDataDict.TryGetValue(key, out var data) ? data.audioClip : null;
     }
 
     private GameObject SpawnAggressorPrefab()
     {
-        string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile");
-        GameObject prefabToSpawn = selectedCountry switch
+        string key = PlayerPrefs.GetString("SelectedCountry", "Australia").ToLower();
+
+        if (aggressorDataDict.TryGetValue(key, out var data) && data.prefab != null)
         {
-            "Peru" or "Perú"  => peruvianAggressorPrefab,
-            "Colombia" => colombianAggressorPrefab,
-            "Argentina" => argentinianAggressorPrefab,
-            _ => chileanAggressorPrefab
-        };
+            GameObject newAggressor = Instantiate(data.prefab, spawnPoint.position, spawnPoint.rotation);
+            newAggressor.transform.SetParent(spawnPoint, false);
+            newAggressor.transform.localPosition = Vector3.zero;
+            newAggressor.transform.localRotation = Quaternion.identity;
+            newAggressor.transform.localScale = Vector3.one;
 
-        if (prefabToSpawn == null) return null;
+            Debug.Log("✨ Agresor generado: " + newAggressor.name);
+            return newAggressor;
+        }
 
-        // ✅ Crear agresor en `spawnPoint`
-        GameObject newAggressor = Instantiate(prefabToSpawn, spawnPoint.position, spawnPoint.rotation);
-        newAggressor.transform.SetParent(spawnPoint, false);
-        newAggressor.transform.localPosition = Vector3.zero;
-        newAggressor.transform.localRotation = Quaternion.identity;
-        newAggressor.transform.localScale = Vector3.one;
-
-        Debug.Log("✨ Agresor generado en (0,0,0): " + newAggressor.name);
-        return newAggressor;
+        return null;
     }
 }

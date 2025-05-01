@@ -162,10 +162,11 @@ public class StartingCanvas : MonoBehaviour
     {
         switch (buttonName)
         {
-            case "Peru": return "Perú";
-            case "Colombia": return "Colombia";
-            case "Argentina": return "Argentina";
-            case "Chile": return "Chile";
+            case "Peru": return "peru";
+            case "Colombia": return "colombia";
+            case "Argentina": return "argentina";
+            case "Chile": return "chile";
+            case "Australia": return "australia";
             default: return "";
         }
     }
