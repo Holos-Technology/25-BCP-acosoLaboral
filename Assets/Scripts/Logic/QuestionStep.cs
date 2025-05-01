@@ -272,19 +272,24 @@ public class QuestionStep : MonoBehaviour, IStep
 public class AnswerOption
 {
     public string answerText;
-    public AudioClip peruvianAudio;
-    public AudioClip chileanAudio;
-    public AudioClip colombianAudio;
-    public AudioClip argentinianAudio;
+    public List<AnswerAudioData> countryAudios = new();
 
     public AudioClip GetAudioByCountry(string country)
     {
-        return country switch
+        string key = country.ToLower();
+        foreach (var entry in countryAudios)
         {
-            "Peru" or "Perú"=> peruvianAudio,
-            "Colombia" => colombianAudio,
-            "Argentina" => argentinianAudio,
-            _ => chileanAudio
-        } ?? null;
+            if (entry.countryKey.ToLower() == key)
+                return entry.audioClip;
+        }
+
+        return null;
     }
+}
+
+[System.Serializable]
+public class AnswerAudioData
+{
+    public string countryKey;
+    public AudioClip audioClip;
 }

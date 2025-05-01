@@ -17,6 +17,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Faena/Casino.unity
     guid: 4891b6a507d303749a86a51125412e13
+  - enabled: 1
+    path: Assets/Scenes/Faena/Subterraneo.unity
+    guid: 4be6df2ed6cd87e42a3a27f7ff0269f2
+  - enabled: 1
+    path: Assets/Scenes/Faena/OfficeFaena/OfficeFaena.unity
+    guid: 7e2e00ee636b12942a13189b992257a1
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 1923479af879ff5448d605ebf9680be2
   m_configObjects:
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: ace0249620807db4b97f8f12b1ef0e27, type: 2}
   m_UseUCBPForAssetBundles: 0

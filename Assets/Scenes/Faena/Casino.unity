@@ -3027,23 +3027,14 @@ MonoBehaviour:
   options:
   - answerText: "Estoy aqu\xED porque tengo las competencias necesarias para este
       trabajo. As\xED que espero que podamos trabajar juntos de manera profesional"
-    peruvianAudio: {fileID: 8300000, guid: 1de323046a7721d4489c7e8544b01ca2, type: 3}
-    chileanAudio: {fileID: 8300000, guid: 2ff94ec9cefff1c46ab969c89bde9eb8, type: 3}
-    colombianAudio: {fileID: 0}
-    argentinianAudio: {fileID: 8300000, guid: 31f2af83b433d6e458dc88e05bb1e25c, type: 3}
+    countryAudios: []
   - answerText: "Bueno... tal vez usted tenga raz\xF3n. Espero poder adaptarme a
       lo que se espera de m\xED en este trabajo"
-    peruvianAudio: {fileID: 8300000, guid: 1de323046a7721d4489c7e8544b01ca2, type: 3}
-    chileanAudio: {fileID: 8300000, guid: eea89ec1f1849eb4b83823ff3accf5ff, type: 3}
-    colombianAudio: {fileID: 0}
-    argentinianAudio: {fileID: 8300000, guid: bd176f0823e20614e8f785e0e1802c83, type: 3}
+    countryAudios: []
   - answerText: "Bueno, parece que ha llegado el momento de cambiar esa percepci\xF3n.
       Estoy aqu\xED para demostrar que las mujeres tambi\xE9n podemos contribuir
       en esta faena como cualquier colega"
-    peruvianAudio: {fileID: 8300000, guid: a21742c26de26c9479914b567079a6e9, type: 3}
-    chileanAudio: {fileID: 8300000, guid: a446dac9b9f7d1940a5413dbd9cd6272, type: 3}
-    colombianAudio: {fileID: 0}
-    argentinianAudio: {fileID: 8300000, guid: 0f918fcf06ce53247865908aad7b08ad, type: 3}
+    countryAudios: []
   maxTime: 60
   requireAggressor: 1
   agressor: {fileID: 1191429487}
@@ -18653,12 +18644,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1801735617}
   startPosition: {x: -25.45, y: 0, z: -9}
-  narrationAudio: {fileID: 8300000, guid: 3d9a3f29c41ff2f4ba8beb3232c818c1, type: 3}
+  narrationAudio: {fileID: 8300000, guid: d31c08074fa295f45a5923a64190f04a, type: 3}
   audioSource: {fileID: 1951176679}
   narrationtext: {fileID: 1844062899}
-  narrationText: Laura, es una joven ingeniera en minas que inicia su turno de trabajo
-    en la faena, un lugar predominantemente masculino, donde se ha normalizado un
-    trato, muchas veces, agresivo y discriminador.
+  narrationText: Michelle is a young mining engineer starting her shift at the site,
+    a predominantly male environment where aggressive and discriminatory behaviour
+    has often been normalized.
 --- !u!4 &519406680 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 6083bd46cfc12194c8da25027571e9fd, type: 3}
@@ -23899,25 +23890,13 @@ MonoBehaviour:
   initialAudioClip: {fileID: 8300000, guid: 3685389bc7a2bf74da81d209636063f3, type: 3}
   options:
   - answerText: Normal para el trabajo en faena
-    peruvianAudio: {fileID: 0}
-    chileanAudio: {fileID: 0}
-    colombianAudio: {fileID: 0}
-    argentinianAudio: {fileID: 0}
+    countryAudios: []
   - answerText: "Discriminaci\xF3n de G\xE9nero"
-    peruvianAudio: {fileID: 0}
-    chileanAudio: {fileID: 0}
-    colombianAudio: {fileID: 0}
-    argentinianAudio: {fileID: 0}
+    countryAudios: []
   - answerText: Acoso Laboral
-    peruvianAudio: {fileID: 0}
-    chileanAudio: {fileID: 0}
-    colombianAudio: {fileID: 0}
-    argentinianAudio: {fileID: 0}
+    countryAudios: []
   - answerText: Un comentario desafortunado del Jefe
-    peruvianAudio: {fileID: 0}
-    chileanAudio: {fileID: 0}
-    colombianAudio: {fileID: 0}
-    argentinianAudio: {fileID: 0}
+    countryAudios: []
   maxTime: 60
   requireAggressor: 0
   agressor: {fileID: 1191429487}
@@ -29661,12 +29640,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1801735617}
   startPosition: {x: -25.45, y: 0, z: -9}
-  narrationAudio: {fileID: 8300000, guid: 89f5b3c0e5c05dd46b8ba47fcf08bffe, type: 3}
+  narrationAudio: {fileID: 8300000, guid: d166afd509bcc9a4e8374080981f401a, type: 3}
   audioSource: {fileID: 1951176679}
   narrationtext: {fileID: 1844062899}
-  narrationText: Laura, es una joven ingeniera en minas que inicia su turno de trabajo
-    en una faena minera, donde se ha incorporado hace algunos meses y enfrenta situaciones
-    complejas con sus colegas y superiores varones.
+  narrationText: Michelle is a young mining engineer starting her work shift at a
+    mining site. She joined the team a few months ago and is navigating everyday
+    situations with her male colleagues and superiors.
 --- !u!4 &944931763 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f9b35ed691cedcb48bd56fce3c21e090, type: 3}
@@ -46437,16 +46416,14 @@ MonoBehaviour:
   audioSource: {fileID: 1322719442}
   initialAudioClip: {fileID: 8300000, guid: 2ceb54438cebc324296bc24b6c68587a, type: 3}
   options:
-  - answerText: "Estoy aqu\xED para trabajar igual que todos los dem\xE1s"
-    peruvianAudio: {fileID: 8300000, guid: b83746f585f277143a98d94e85f6557d, type: 3}
-    chileanAudio: {fileID: 8300000, guid: a56823e6267b7a6478c1a5740c816498, type: 3}
-    colombianAudio: {fileID: 0}
-    argentinianAudio: {fileID: 8300000, guid: b801d11ad583f4f429661db12c2aca67, type: 3}
-  - answerText: No subestimes mis habilidades por ser mujer
-    peruvianAudio: {fileID: 8300000, guid: 271905b4aabef4147a33b68a1ceb3b6e, type: 3}
-    chileanAudio: {fileID: 8300000, guid: c48be4fc991cce74f8c89ae85ef41f5a, type: 3}
-    colombianAudio: {fileID: 0}
-    argentinianAudio: {fileID: 8300000, guid: bbee893528fcec34b9da532c37e5b59e, type: 3}
+  - answerText: "I\u2019m here to work just like everyone else."
+    countryAudios:
+    - countryKey: 
+      audioClip: {fileID: 0}
+  - answerText: "Don\u2019t underestimate my abilities just because I\u2019m a woman."
+    countryAudios:
+    - countryKey: 
+      audioClip: {fileID: 0}
   maxTime: 60
   requireAggressor: 1
   agressor: {fileID: 1191429487}

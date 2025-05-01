@@ -1471,7 +1471,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2667,6 +2667,8 @@ MonoBehaviour:
       m_Calls: []
   requiresTrigger: 0
   requiredTriggerTag: recognize trigger
+  isSkippable: 0
+  skipDelay: 5
 --- !u!1 &281152922
 GameObject:
   m_ObjectHideFlags: 0
@@ -2712,7 +2714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2609c54f376cffc4da1ab9401cc1a36f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skeletonType: 5
+  _skeletonType: 1
   _updateRootPose: 0
   _updateRootScale: 1
   _enablePhysicsCapsules: 0
@@ -9319,7 +9321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2609c54f376cffc4da1ab9401cc1a36f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skeletonType: 4
+  _skeletonType: 0
   _updateRootPose: 0
   _updateRootScale: 1
   _enablePhysicsCapsules: 0
@@ -10270,14 +10272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationTrigger: Clip7
   audioSource: {fileID: 1993345213}
-  peruvianAggressorAudio: {fileID: 8300000, guid: 587c9b7c068b6b449a1d501ab2a9ff10, type: 3}
-  chileanAggressorAudio: {fileID: 8300000, guid: b061e4c1ae0796e41992c39af9f6f086, type: 3}
-  colombianAggressorAudio: {fileID: 0}
-  argentinianAggressorAudio: {fileID: 8300000, guid: c916664bc15959a42a23548567695176, type: 3}
-  peruvianAggressorPrefab: {fileID: 893811968526298102, guid: 0228adf7e65aa0747848898804d551ff, type: 3}
-  chileanAggressorPrefab: {fileID: 356910156284278295, guid: cbdc49aeb2be33c4bb33e2a8bfb1c564, type: 3}
-  colombianAggressorPrefab: {fileID: 0}
-  argentinianAggressorPrefab: {fileID: 4008819916795536551, guid: 7e159f65896aeac42951dc27b6c9cf35, type: 3}
+  aggressorDataList: []
   spawnPoint: {fileID: 1993345212}
   destroyAggressorOnFinish: 0
   OnPlayStepEvent:
@@ -18063,14 +18058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationTrigger: Clip6
   audioSource: {fileID: 1993345213}
-  peruvianAggressorAudio: {fileID: 8300000, guid: 7c03cfdc7b98db84598fdecc8ded7375, type: 3}
-  chileanAggressorAudio: {fileID: 8300000, guid: 4c6f7b4006952eb4e92339509c5e8cb1, type: 3}
-  colombianAggressorAudio: {fileID: 0}
-  argentinianAggressorAudio: {fileID: 8300000, guid: d0ae0c757983f4e4bb529252095e34c9, type: 3}
-  peruvianAggressorPrefab: {fileID: 893811968526298102, guid: 0228adf7e65aa0747848898804d551ff, type: 3}
-  chileanAggressorPrefab: {fileID: 356910156284278295, guid: cbdc49aeb2be33c4bb33e2a8bfb1c564, type: 3}
-  colombianAggressorPrefab: {fileID: 0}
-  argentinianAggressorPrefab: {fileID: 4008819916795536551, guid: 7e159f65896aeac42951dc27b6c9cf35, type: 3}
+  aggressorDataList: []
   spawnPoint: {fileID: 1993345212}
   destroyAggressorOnFinish: 0
   OnPlayStepEvent:
@@ -20958,7 +20946,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
