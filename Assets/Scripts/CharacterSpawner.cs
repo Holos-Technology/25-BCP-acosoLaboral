@@ -16,7 +16,7 @@ public class CharacterSpawner : MonoBehaviour
 
     void ActivateCharacter()
     {
-        string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "");
+        string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile"); // Chile por defecto
 
         GameObject selectedCharacter = null;
 
@@ -26,8 +26,6 @@ public class CharacterSpawner : MonoBehaviour
                 selectedCharacter = chileCharacter;
                 break;
             case "Perú":
-                selectedCharacter = peruCharacter;
-                break;
             case "Peru":
                 selectedCharacter = peruCharacter;
                 break;
@@ -45,14 +43,10 @@ public class CharacterSpawner : MonoBehaviour
             return;
         }
 
-        // Activar el personaje correcto
         selectedCharacter.SetActive(true);
         StartCoroutine(ResetOVRBodyNextFrame(selectedCharacter));
-
-        // Destruir los personajes no seleccionados
         DestroyUnusedCharacters(selectedCharacter);
     }
-
     void DestroyUnusedCharacters(GameObject activeCharacter)
     {
         if (chileCharacter != null && chileCharacter != activeCharacter)

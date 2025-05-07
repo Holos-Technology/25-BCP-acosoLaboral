@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -6,52 +7,54 @@ public class CharacterTalkStep : MonoBehaviour, IStep
 {
     [Header("Audio Config")]
     [SerializeField] private AudioSource characterAudioSource;
-    
-    [Header("Audio Clips por País")]
-    [SerializeField] private AudioClip peruvianAudio;
-    [SerializeField] private AudioClip chileanAudio;
-    [SerializeField] private AudioClip colombianAudio;
-    [SerializeField] private AudioClip argentinianAudio;
 
+    [Header("Audios por País")]
+    [SerializeField] private List<CountryAudioData> countryAudios;
 
     public UnityEvent onStartStep;
 
     public IEnumerator Execute()
     {
+        onStartStep?.Invoke();
+
         if (characterAudioSource == null)
         {
             Debug.LogWarning("No se asignó un AudioSource en CharacterTalkStep.");
             yield break;
         }
 
-        // Obtener el AudioClip correcto según la nacionalidad
-        AudioClip selectedClip = GetCharacterAudio();
+        // Obtener el AudioClip correspondiente
+        AudioClip selectedClip = GetAudioClipByCountry();
 
         if (selectedClip == null)
         {
-            Debug.LogWarning("No hay AudioClip asignado para este país.");
+            Debug.LogWarning("No hay AudioClip asignado para el país seleccionado.");
             yield break;
         }
 
-        // Reproducir el audio
         characterAudioSource.clip = selectedClip;
         characterAudioSource.Play();
 
-        // Esperar hasta que termine el audio
         yield return new WaitForSeconds(selectedClip.length);
     }
 
-    private AudioClip GetCharacterAudio()
+    private AudioClip GetAudioClipByCountry()
     {
-        string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile"); // Chile por defecto
+        string country = PlayerPrefs.GetString("SelectedCountry", "Australia").ToLower();
 
-        switch (selectedCountry)
+        foreach (var entry in countryAudios)
         {
-            case "Peru" or "Perú": return peruvianAudio;
-            case "Colombia": return colombianAudio;
-            case "Argentina": return argentinianAudio;
-            default: return chileanAudio; // Chile en todos los demás casos
+            if (entry.countryKey.ToLower() == country)
+                return entry.audioClip;
         }
+
+        return null;
     }
 
+}
+[System.Serializable]
+public class CountryAudioData
+{
+    public string countryKey;
+    public AudioClip audioClip;
 }

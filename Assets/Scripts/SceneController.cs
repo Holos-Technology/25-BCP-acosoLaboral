@@ -11,7 +11,7 @@ public class SceneController : MonoBehaviour
     private IEnumerator LoadSceneAsync(int index)
     {
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(index);
-        asyncOperation.allowSceneActivation = false;
+        asyncOperation.allowSceneActivation = true;
 
         // Esperar hasta que la carga esté completa
         while (!asyncOperation.isDone)

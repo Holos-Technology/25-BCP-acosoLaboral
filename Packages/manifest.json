@@ -2,6 +2,7 @@
   "dependencies": {
     "com.meta.movement": "https://github.com/oculus-samples/Unity-Movement.git",
     "com.meta.xr.sdk.all": "74.0.1",
+    "com.soupday.cc3_unity_tools": "file:C:/Users/juane/Downloads/Character_Creator_and_iClone_Auto_Setup_1.4.6_for_Unity_HDRP12",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.ads": "4.4.2",

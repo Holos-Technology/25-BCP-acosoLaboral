@@ -15,7 +15,7 @@ public class AggresorStep : MonoBehaviour, IStep
 {
     [Header("Animator Settings")]
     [SerializeField] private string animationTrigger;
-
+    [SerializeField] private bool lookInChild = false; // Nuevo bool agregado
     [Header("Audio Settings")]
     [SerializeField] private AudioSource audioSource;
 
@@ -98,12 +98,21 @@ public class AggresorStep : MonoBehaviour, IStep
         Debug.Log("🎭 Agresor activado en `Execute()`.");
 
         // Activar animación si aplica
-        Animator aggressorAnimator = spawnedAggressor.GetComponentInChildren<Animator>();
+        Animator aggressorAnimator = null;
+
+        if (lookInChild && spawnedAggressor.transform.childCount > 0)
+        {
+            aggressorAnimator = spawnedAggressor.transform.GetChild(0).GetComponent<Animator>();
+        }
+        else
+        {
+            aggressorAnimator = spawnedAggressor.GetComponentInChildren<Animator>();
+        }
+
         if (aggressorAnimator != null && !string.IsNullOrEmpty(animationTrigger))
         {
             aggressorAnimator.SetTrigger(animationTrigger);
         }
-
         // Reproducir audio si aplica
         AudioClip clip = GetAggressorAudio();
         if (clip != null)

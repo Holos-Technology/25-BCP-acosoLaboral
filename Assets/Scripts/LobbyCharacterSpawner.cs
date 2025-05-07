@@ -21,19 +21,12 @@ public class LobbyCharacterSpawner : MonoBehaviour
 
     void Awake()
     {
-        // Activar todos los personajes temporalmente para inicializar
-        foreach (var entry in charactersPorPais)
-        {
-            entry.corporativo?.SetActive(true);
-            entry.faena?.SetActive(true);
-        }
 
-        // Luego desactivarlos
-        DisableAllCharacters();
     }
 
     void Start()
     {
+        Debug.Log("ACTIVACION" + PlayerPrefs.GetString("SelectedCountry"));
         ActivateCharacter();
     }
 
@@ -45,9 +38,6 @@ public class LobbyCharacterSpawner : MonoBehaviour
         // Desactivar todos
         DisableAllCharacters();
 
-        // Activar escenario
-        corporativoScenario.SetActive(selectedScenario == "Corporativo");
-        faenaScenario.SetActive(selectedScenario == "Faena");
 
         // Activar personaje
         GameObject selectedCharacter = GetSelectedCharacter(selectedCountry, selectedScenario);

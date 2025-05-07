@@ -85,6 +85,8 @@ public class StartingCanvas : MonoBehaviour
         selectedScenario =
             scenarioDropdown.options[scenarioDropdown.value].text; // ✅ Ahora guarda el escenario correctamente
         ValidateFields();
+        
+        Debug.Log(selectedScenario);    
     }
 
     void ClickedCountry(Button btn)
@@ -202,6 +204,8 @@ public class StartingCanvas : MonoBehaviour
         FormularioManager.Instance.formulario.fields["Sexo"] = selectedGender;
 
         string selectedId = identifierDropdown.options[identifierDropdown.value].text;
+        
+        Debug.Log(selectedScenario);
         if (PlayerManager.Instance != null)
         {
             if (!string.IsNullOrEmpty(selectedId))
@@ -213,7 +217,8 @@ public class StartingCanvas : MonoBehaviour
                 Debug.Log($"🎭 Escenario seleccionado: {selectedScenario}");
                 Debug.Log($"🔍 DebugMode: {debugMode}");
                 FormularioManager.Instance.SaveFormulario(); // 🔹 Guardar JSON solo al confirmar
-
+                
+             
                 if (debugMode)
                 {
                     if (selectedScenario == "Faena")
