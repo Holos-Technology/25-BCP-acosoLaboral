@@ -4,31 +4,28 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - QDSUISection
+  - Anchor
+  - recognize trigger
+  - RightController
+  - LeftController
+  - QDSUIBackplateGradient
+  - QDSUIToggleSwitch
+  - QDSUITooltip
+  - QDSUISharedThemeColor
   - QDSUIAccentColor
-  - QDSUISecondaryButton
-  - QDSUIPrimaryButton
-  - QDSUITextSecondaryInvertedColor
-  - QDSUITextInvertedColor
+  - QDSUIBorderlessButton
   - QDSUIToggleButton
+  - QDSUISecondaryButton
+  - QDSUIToggleBorderlessButton
   - QDSUIIcon
   - QDSUITextSecondaryColor
-  - QDSUIDestructiveButton
-  - QDSUISharedThemeColor
-  - QDSUIBorderlessButton
-  - QDSUIToggleBorderlessButton
-  - QDSUIBackplateGradient
-  - QDSUITooltip
-  - QDSUIToggleSwitch
-  - Anchor
-  - Locomotion
-  - LocoButton
-  - LocoText
-  - PassThroughButton
-  - PassThrough
+  - QDSUISection
   - QDSUITextInputField
-  - SamplesInfoPanel
+  - QDSUIPrimaryButton
+  - QDSUITextInvertedColor
+  - QDSUITextSecondaryInvertedColor
   - QDSUIToggleCheckboxRadio
+  - QDSUIDestructiveButton
   - Head
   layers:
   - Default
@@ -37,9 +34,9 @@ TagManager:
   - HiddenMesh
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Accesories
+  - NotvisibleMainCamera
+  - SecondCamerablocker
   - 
   - Character
   - MirroredCharacter
@@ -69,3 +66,10 @@ TagManager:
     locked: 0
   m_RenderingLayers:
   - Default
+  - Light Layer 1
+  - Light Layer 2
+  - Light Layer 3
+  - Light Layer 4
+  - Light Layer 5
+  - Light Layer 6
+  - Light Layer 7
