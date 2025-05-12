@@ -23,6 +23,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Faena/OfficeFaena/OfficeFaena.unity
     guid: 7e2e00ee636b12942a13189b992257a1
+<<<<<<< Updated upstream
+=======
+  - enabled: 0
+    path: Assets/Scenes/Corporativo/Corporativo.unity
+    guid: 3b8e160c01c53dc40b363b6f79545830
+  - enabled: 0
+    path: Assets/Scenes/Corporativo/Corporativo2.unity
+    guid: effeaf9c18033fb438f247e67f45ab8b
+  - enabled: 0
+    path: Assets/Scenes/Corporativo/Corporativo3.unity
+    guid: 26b1db1e617484742ad2c844891d7a01
+  - enabled: 0
+    path: Assets/Scenes/Faena/FinalSceneFaena.unity
+    guid: 762992fac12ace64782b6058a219d0b8
+>>>>>>> Stashed changes
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 1923479af879ff5448d605ebf9680be2

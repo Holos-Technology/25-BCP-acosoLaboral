@@ -326,7 +326,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 446989934}
   startPosition: {x: -25.45, y: 0, z: 0}
+<<<<<<< Updated upstream
   narrationAudio: {fileID: 8300000, guid: 0e30192eb0c630242b39dba5aaa793af, type: 3}
+=======
+  narrationAudio: {fileID: 8300000, guid: dee5ea48637c2404695dfd7cb14f4f67, type: 3}
+>>>>>>> Stashed changes
   audioSource: {fileID: 403441706}
   narrationtext: {fileID: 2031979289}
   narrationText: Near the end of the workday, Michelle finds herself alone in the
