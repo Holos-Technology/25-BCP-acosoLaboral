@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 64a9f802cfacc42cfad2910eca0bd51a
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215472
+  packageName: Localization Toolkit - lightweight solution
+  packageVersion: 1.2.1
+  assetPath: Assets/StreamingAssets/lang.xml
+  uploadId: 557243

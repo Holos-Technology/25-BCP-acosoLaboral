@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c00cf4cd9d05a064e9edfa9740e473de
+timeCreated: 1511352770
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215472
+  packageName: Localization Toolkit - lightweight solution
+  packageVersion: 1.2.1
+  assetPath: Assets/LocalizationToolkit/Scene/Demo.unity
+  uploadId: 557243
