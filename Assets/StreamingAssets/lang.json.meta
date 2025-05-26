@@ -1,15 +1,7 @@
 fileFormatVersion: 2
-guid: e89d5300ea956584aa5fea19204d84d9
-timeCreated: 1511448767
-licenseType: Store
+guid: a3392d60ac69c9349bd5a86a21451df7
 DefaultImporter:
+  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 215472
-  packageName: Localization Toolkit - lightweight solution
-  packageVersion: 1.2.1
-  assetPath: Assets/StreamingAssets/lang.json
-  uploadId: 557243

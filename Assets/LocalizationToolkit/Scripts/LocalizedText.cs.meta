@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 7587362989ec78c4a840cf48d824fad5
+timeCreated: 1511364005
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215472
+  packageName: Localization Toolkit - lightweight solution
+  packageVersion: 1.2.1
+  assetPath: Assets/LocalizationToolkit/Scripts/LocalizedText.cs
+  uploadId: 557243

@@ -1,57 +1,374 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="79c44e3c-905f-4d6a-9743-3024aedd9e60" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Likert.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Likert.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Likert.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Likert.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/QuestionParent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/QuestionParent.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/QuestionParent.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/QuestionParent.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RiggedCharacters.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RiggedCharacters/RIGCHILENAFAENA.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RiggedCharacters/RIGCHILENAFAENA.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.25-BCP-acosoLaboral/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.25-BCP-acosoLaboral/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/Animations/Clip3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/Animations/Clip3.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/Animations/M_Aust_Faena.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/Animations/M_Aust_Faena.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.Fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.Fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.Fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.Fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boots_Diffuse.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boots_Diffuse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boots_Diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boots_Diffuse.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boots_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boots_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boots_Opacity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boots_Opacity.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boots_Specular.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boots_Specular.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boxers_Diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boxers_Diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boxers_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boxers_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boxers_Opacity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boxers_Opacity.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boxers_Specular.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Boxers_Specular.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Default_001_Bump.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Default_001_Bump.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Default_001_Diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Default_001_Diffuse.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Fit_shirts_Diffuse.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Fit_shirts_Diffuse.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Fit_shirts_Normal.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Fit_shirts_Normal.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Eyelash_Diffuse.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Eyelash_Diffuse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Eyelash_Diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Eyelash_Diffuse.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Eyelash_Opacity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Eyelash_Opacity.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Nails_Diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Nails_Diffuse.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Nails_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Nails_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Skin_Arm_Diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Skin_Arm_Diffuse.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Skin_Arm_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Skin_Arm_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Skin_Body_Diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Skin_Body_Diffuse.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Skin_Body_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Skin_Body_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Skin_Head_Diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Skin_Head_Diffuse.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Skin_Head_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Skin_Head_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Skin_Leg_Diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Skin_Leg_Diffuse.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Skin_Leg_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Skin_Leg_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Tongue_Diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Tongue_Diffuse.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Tongue_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Ga_Tongue_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Hair_Transparency_Diffuse.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Hair_Transparency_Diffuse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Hair_Transparency_Diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Hair_Transparency_Diffuse.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Hair_Transparency_Opacity.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Hair_Transparency_Opacity.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Hair_Transparency_Specular.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Hair_Transparency_Specular.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Glasses0_Diffuse.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Glasses0_Diffuse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Glasses0_Diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Glasses0_Diffuse.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Glasses0_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Glasses0_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Glasses0_Opacity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Glasses0_Opacity.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Glasses1_Diffuse.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Glasses1_Diffuse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Glasses1_Diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Glasses1_Diffuse.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Glasses1_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Glasses1_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Glasses1_Opacity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Glasses1_Opacity.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Helmet0_Diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Helmet0_Diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Helmet0_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Helmet0_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Helmet0_Opacity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Helmet0_Opacity.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Helmet1_Diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Helmet1_Diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Helmet1_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Helmet1_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Helmet1_Opacity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_Helmet1_Opacity.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_vest0_Diffuse.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_vest0_Diffuse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_vest0_Diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_vest0_Diffuse.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_vest0_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_vest0_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_vest0_Opacity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_vest0_Opacity.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_vest1_Diffuse.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_vest1_Diffuse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_vest1_Diffuse.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_vest1_Diffuse.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_vest1_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_vest1_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_vest1_Opacity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Safety_vest1_Opacity.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Scalp_Transparency_Diffuse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Scalp_Transparency_Diffuse.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Scalp_Transparency_Opacity.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Scalp_Transparency_Opacity.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Slim_Jeans_Diffuse.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Slim_Jeans_Diffuse.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Slim_Jeans_Normal.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Slim_Jeans_Normal.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Cornea_L_Diffuse.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Cornea_L_Diffuse.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Cornea_R_Diffuse.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Cornea_R_Diffuse.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Eye_L_Diffuse.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Eye_L_Diffuse.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Eye_L_Normal.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Eye_L_Normal.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Eye_R_Diffuse.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Eye_R_Diffuse.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Eye_R_Normal.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Eye_R_Normal.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Lower_Teeth_Diffuse.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Lower_Teeth_Diffuse.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Lower_Teeth_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Lower_Teeth_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Upper_Teeth_Diffuse.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Upper_Teeth_Diffuse.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Upper_Teeth_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.fbm/Std_Upper_Teeth_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/M_Aust_Faena.json.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boots.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boots.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boots/Boots.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boots/Boots.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boots/Boots/Boots.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boots/Boots/Boots.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boots/Boots/Boots/Boots_Glow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boots/Boots/Boots/Boots_Glow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boots/Boots/Boots/Boots_ao.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boots/Boots/Boots/Boots_ao.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boots/Boots/Boots/Boots_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boots/Boots/Boots/Boots_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boots/Boots/Boots/Boots_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boots/Boots/Boots/Boots_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boxers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boxers/Boxers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boxers/Boxers/Boxers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boxers/Boxers/Boxers/Boxers_Displacement.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boxers/Boxers/Boxers/Boxers_Displacement.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boxers/Boxers/Boxers/Boxers_Glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boxers/Boxers/Boxers/Boxers_Glow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boxers/Boxers/Boxers/Boxers_ao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boxers/Boxers/Boxers/Boxers_ao.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boxers/Boxers/Boxers/Boxers_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boxers/Boxers/Boxers/Boxers_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boxers/Boxers/Boxers/Boxers_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Boxers/Boxers/Boxers/Boxers_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Fit_shirts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Fit_shirts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Fit_shirts/Fit_shirts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Fit_shirts/Fit_shirts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Fit_shirts/Fit_shirts/Fit_shirts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Fit_shirts/Fit_shirts/Fit_shirts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Fit_shirts/Fit_shirts/Fit_shirts/Fit_shirts_Glow.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Fit_shirts/Fit_shirts/Fit_shirts/Fit_shirts_Glow.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Fit_shirts/Fit_shirts/Fit_shirts/Fit_shirts_ao.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Fit_shirts/Fit_shirts/Fit_shirts/Fit_shirts_ao.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Fit_shirts/Fit_shirts/Fit_shirts/Fit_shirts_roughness.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Fit_shirts/Fit_shirts/Fit_shirts/Fit_shirts_roughness.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/MASCARA_002.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/MASCARA_002.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/MASCARA_002/MASCARA_002.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/MASCARA_002/MASCARA_002.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/MASCARA_002/MASCARA_002/Default_001.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/MASCARA_002/MASCARA_002/Default_001.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/MASCARA_002/MASCARA_002/Default_001/Default_001_Displacement.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/MASCARA_002/MASCARA_002/Default_001/Default_001_Displacement.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Eyelash.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Eyelash/Ga_Eyelash_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Eyelash/Ga_Eyelash_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Eyelash/Ga_Eyelash_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Eyelash/Ga_Eyelash_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Nails.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Nails/Ga_Nails_ao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Nails/Ga_Nails_ao.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Nails/Ga_Nails_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Nails/Ga_Nails_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Nails/Ga_Nails_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Nails/Ga_Nails_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Arm.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Arm/Ga_Skin_Arm_ao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Arm/Ga_Skin_Arm_ao.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Arm/Ga_Skin_Arm_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Arm/Ga_Skin_Arm_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Arm/Ga_Skin_Arm_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Arm/Ga_Skin_Arm_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Body.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Body/Ga_Skin_Body_ao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Body/Ga_Skin_Body_ao.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Body/Ga_Skin_Body_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Body/Ga_Skin_Body_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Body/Ga_Skin_Body_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Body/Ga_Skin_Body_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Head.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Head/Ga_Skin_Head_ao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Head/Ga_Skin_Head_ao.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Head/Ga_Skin_Head_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Head/Ga_Skin_Head_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Head/Ga_Skin_Head_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Head/Ga_Skin_Head_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Leg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Leg/Ga_Skin_Leg_ao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Leg/Ga_Skin_Leg_ao.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Leg/Ga_Skin_Leg_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Leg/Ga_Skin_Leg_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Leg/Ga_Skin_Leg_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Skin_Leg/Ga_Skin_Leg_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Tongue.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Tongue/Ga_Tongue_ao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Tongue/Ga_Tongue_ao.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Tongue/Ga_Tongue_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Tongue/Ga_Tongue_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Tongue/Ga_Tongue_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Ga_Tongue/Ga_Tongue_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_L.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_L/Std_Cornea_L_ao.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_L/Std_Cornea_L_ao.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_L/Std_Cornea_L_metallic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_L/Std_Cornea_L_metallic.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_L/Std_Cornea_L_roughness.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_L/Std_Cornea_L_roughness.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R/Std_Cornea_R_BCBMap.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R/Std_Cornea_R_BCBMap.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R/Std_Cornea_R_IrisMask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R/Std_Cornea_R_IrisMask.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R/Std_Cornea_R_IrisN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R/Std_Cornea_R_IrisN.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R/Std_Cornea_R_Sclera.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R/Std_Cornea_R_Sclera.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R/Std_Cornea_R_ScleraN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R/Std_Cornea_R_ScleraN.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R/Std_Cornea_R_ao.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R/Std_Cornea_R_ao.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R/Std_Cornea_R_metallic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R/Std_Cornea_R_metallic.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R/Std_Cornea_R_roughness.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Cornea_R/Std_Cornea_R_roughness.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Eye_L.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Eye_L/Std_Eye_L_metallic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Eye_L/Std_Eye_L_metallic.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Eye_L/Std_Eye_L_roughness.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Eye_L/Std_Eye_L_roughness.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Eye_R.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Eye_R/Std_Eye_R_metallic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Eye_R/Std_Eye_R_metallic.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Eye_R/Std_Eye_R_roughness.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Eye_R/Std_Eye_R_roughness.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Lower_Teeth.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Lower_Teeth/Std_Lower_Teeth_GradAO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Lower_Teeth/Std_Lower_Teeth_GradAO.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Lower_Teeth/Std_Lower_Teeth_GumsMask.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Lower_Teeth/Std_Lower_Teeth_GumsMask.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Lower_Teeth/Std_Lower_Teeth_MicroN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Lower_Teeth/Std_Lower_Teeth_MicroN.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Lower_Teeth/Std_Lower_Teeth_ao.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Lower_Teeth/Std_Lower_Teeth_ao.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Lower_Teeth/Std_Lower_Teeth_metallic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Lower_Teeth/Std_Lower_Teeth_metallic.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Lower_Teeth/Std_Lower_Teeth_roughness.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Lower_Teeth/Std_Lower_Teeth_roughness.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Upper_Teeth.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Upper_Teeth/Std_Upper_Teeth_GradAO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Upper_Teeth/Std_Upper_Teeth_GradAO.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Upper_Teeth/Std_Upper_Teeth_GumsMask.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Upper_Teeth/Std_Upper_Teeth_GumsMask.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Upper_Teeth/Std_Upper_Teeth_MicroN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Upper_Teeth/Std_Upper_Teeth_MicroN.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Upper_Teeth/Std_Upper_Teeth_ao.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Upper_Teeth/Std_Upper_Teeth_ao.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Upper_Teeth/Std_Upper_Teeth_metallic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Upper_Teeth/Std_Upper_Teeth_metallic.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Upper_Teeth/Std_Upper_Teeth_roughness.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/M_Aust_Faena/CC_Game_Body/Std_Upper_Teeth/Std_Upper_Teeth_roughness.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses0.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses0.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses0/Safety_Glasses0_ao.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses0/Safety_Glasses0_ao.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses0/Safety_Glasses0_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses0/Safety_Glasses0_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses0/Safety_Glasses0_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses0/Safety_Glasses0_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses1.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses1.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses1/Safety_Glasses1_Glow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses1/Safety_Glasses1_Glow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses1/Safety_Glasses1_ao.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses1/Safety_Glasses1_ao.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses1/Safety_Glasses1_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses1/Safety_Glasses1_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses1/Safety_Glasses1_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Glasses/Safety_Glasses/Safety_Glasses1/Safety_Glasses1_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Helmet.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Helmet/Safety_Helmet.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Helmet/Safety_Helmet/Safety_Helmet0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Helmet/Safety_Helmet/Safety_Helmet0/Safety_Helmet0_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Helmet/Safety_Helmet/Safety_Helmet0/Safety_Helmet0_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Helmet/Safety_Helmet/Safety_Helmet0/Safety_Helmet0_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Helmet/Safety_Helmet/Safety_Helmet0/Safety_Helmet0_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Helmet/Safety_Helmet/Safety_Helmet1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Helmet/Safety_Helmet/Safety_Helmet1/Safety_Helmet1_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Helmet/Safety_Helmet/Safety_Helmet1/Safety_Helmet1_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Helmet/Safety_Helmet/Safety_Helmet1/Safety_Helmet1_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_Helmet/Safety_Helmet/Safety_Helmet1/Safety_Helmet1_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_vest.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_vest.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_vest/Safety_vest.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_vest/Safety_vest.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_vest/Safety_vest/Safety_vest0.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_vest/Safety_vest/Safety_vest0.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_vest/Safety_vest/Safety_vest0/Safety_vest0_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_vest/Safety_vest/Safety_vest0/Safety_vest0_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_vest/Safety_vest/Safety_vest0/Safety_vest0_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_vest/Safety_vest/Safety_vest0/Safety_vest0_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_vest/Safety_vest/Safety_vest1.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_vest/Safety_vest/Safety_vest1.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_vest/Safety_vest/Safety_vest1/Safety_vest1_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_vest/Safety_vest/Safety_vest1/Safety_vest1_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_vest/Safety_vest/Safety_vest1/Safety_vest1_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Safety_vest/Safety_vest/Safety_vest1/Safety_vest1_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency/Hair_Transparency_Hair Flow Map.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency/Hair_Transparency_Hair Flow Map.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency/Hair_Transparency_Hair ID Map.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency/Hair_Transparency_Hair ID Map.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency/Hair_Transparency_Hair Root Map.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency/Hair_Transparency_Hair Root Map.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency/Hair_Transparency_ao.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency/Hair_Transparency_ao.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency/Hair_Transparency_blend_multiply.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency/Hair_Transparency_blend_multiply.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency/Hair_Transparency_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency/Hair_Transparency_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency/Hair_Transparency_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency/Hair_Transparency_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency/Hair_Transparency_vertexcolormap.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Hair_Transparency/Hair_Transparency_vertexcolormap.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Scalp_Transparency.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Scalp_Transparency.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Scalp_Transparency/Scalp_Transparency_metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Scalp_Transparency/Scalp_Transparency_metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Scalp_Transparency/Scalp_Transparency_roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Short_blowback/Short_blowback/Scalp_Transparency/Scalp_Transparency_roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Slim_Jeans.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Slim_Jeans.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Slim_Jeans/Slim_Jeans.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Slim_Jeans/Slim_Jeans.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Slim_Jeans/Slim_Jeans/Slim_Jeans.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Slim_Jeans/Slim_Jeans/Slim_Jeans.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Slim_Jeans/Slim_Jeans/Slim_Jeans/Slim_Jeans_ao.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Slim_Jeans/Slim_Jeans/Slim_Jeans/Slim_Jeans_ao.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Slim_Jeans/Slim_Jeans/Slim_Jeans/Slim_Jeans_metallic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Slim_Jeans/Slim_Jeans/Slim_Jeans/Slim_Jeans_metallic.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Slim_Jeans/Slim_Jeans/Slim_Jeans/Slim_Jeans_roughness.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/textures/M_Aust_Faena/Slim_Jeans/Slim_Jeans/Slim_Jeans/Slim_Jeans_roughness.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JP_School cafeteria/Mesh/Materials/kettle01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JP_School cafeteria/Mesh/Materials/kettle01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/JP_School cafeteria/Scene/Scool CafeteriaSettings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/JP_School cafeteria/Scene/Scool CafeteriaSettings.lighting" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/LightingData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-0_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-0_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-0_comp_dir.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-0_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-0_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-0_comp_light.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-1_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-1_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-1_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-1_comp_dir.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-1_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-1_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-1_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-1_comp_light.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-2_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-2_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-2_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-2_comp_dir.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-2_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-2_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-2_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-2_comp_light.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-3_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-3_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-3_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-3_comp_dir.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-3_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-3_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-3_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/Lightmap-3_comp_light.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/ReflectionProbe-0.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino/ReflectionProbe-0.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Office1.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Office1.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Office2.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Office2.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Office3.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Office3.renderTexture" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterSpawner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterSpawner.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EyeFollow.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EyeFollow.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/AggresorStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/AggresorStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/CharacterTalkStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/CharacterTalkStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/FadeInStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/FadeInStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/FadeOutStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/FadeOutStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/GenrePendingStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/GenrePendingStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/GenrePendingTextSetter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/GenrePendingTextSetter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/IStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/IStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/LikertStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/LikertStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/NarrationStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/NarrationStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/PlaySoundStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/PlaySoundStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/QuestionStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/QuestionStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/SpecialLobbyLoad.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/SpecialLobbyLoad.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/TeleportStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/TeleportStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/XRFreeze.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Logic/XRFreeze.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sequencer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sequencer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleTimer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimpleTimer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/StartinUIManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/StartinUIManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Project Configuration/Quality URP Config.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Project Configuration/Quality URP Config.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Project Configuration/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Project Configuration/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/lang.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/lang.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/lang.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/lang.json.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/lang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/lang.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/lang.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/lang.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TempAssembly.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TempAssembly.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NewLogic/AudioStep.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NewLogic/FadeInStep.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NewLogic/SceneGameManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -65,7 +382,13 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+    &quot;git-widget-placeholder&quot;: &quot;NewUpdates&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -116,9 +439,16 @@
       <updated>1747544621154</updated>
       <workItem from="1747544623082" duration="4000" />
       <workItem from="1747592987684" duration="555000" />
+      <workItem from="1748223563959" duration="4131000" />
+      <workItem from="1748276111471" duration="757000" />
+      <workItem from="1748284119985" duration="5730000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
     <option name="hasUnityReference" value="true" />
     <option name="unityProject" value="true" />
