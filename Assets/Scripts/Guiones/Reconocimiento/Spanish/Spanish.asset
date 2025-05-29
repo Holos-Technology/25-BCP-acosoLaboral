@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10750ff025e03b84ab5efdbb69e70ea3, type: 3}
+  m_Name: Spanish
+  m_EditorClassIdentifier: 
+  country: N/A
+  scenario: Reconocimiento
+  sceneName: Lobby
+  language: Spanish
+  steps:
+  - {fileID: 11400000, guid: 263a1bcdbec3b5d4ba99378f4aceae02, type: 2}
+  - {fileID: 11400000, guid: de48eb71c81228949927c5553955e7e2, type: 2}
+  - {fileID: 11400000, guid: 8462977de2b34104eb2eb31c62045216, type: 2}
+  - {fileID: 11400000, guid: 46eea70ae714d4244883113481dee82e, type: 2}
+  - {fileID: 11400000, guid: c1ab722d0c8257a41b7a3f4ccc917572, type: 2}
+  - {fileID: 11400000, guid: 5225c1b8a527c4f438500a8b047486ea, type: 2}
+  - {fileID: 11400000, guid: 178e00d5292a4eb48adfd0cf1279c7bc, type: 2}
+  - {fileID: 11400000, guid: 75e87a5008ee22145b7b03df1320d5ac, type: 2}
