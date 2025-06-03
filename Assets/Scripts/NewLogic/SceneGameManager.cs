@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -19,10 +20,14 @@ public class SceneGameManager : MonoBehaviour
     public SceneScriptable englishScenes;
 
     [Header("Scriptables por país")]
-    public SceneScriptable chileScenes;
-    public SceneScriptable argentinaScenes;
-    public SceneScriptable peruScenes;
-    public SceneScriptable australiaScenes;
+    public SceneScriptable chileScenesFem;
+    public SceneScriptable chileScenesMale;
+    public SceneScriptable argentinaScenesFem;
+    public SceneScriptable argentinaScenesMale;
+    public SceneScriptable peruScenesFem;
+    public SceneScriptable peruScenesMale;
+    public SceneScriptable australiaScenesFem;
+    public SceneScriptable australiaScenesMale;
 
     [Header("AudioSources")]
     public AudioSource sfxAudioSource1;
@@ -48,6 +53,10 @@ public class SceneGameManager : MonoBehaviour
 
     [SerializeField] private GameObject player;
     PlayerController playerController;
+    
+    private string selectedGender;
+
+    [SerializeField] private TextMeshProUGUI narrativeText;
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -74,6 +83,7 @@ public class SceneGameManager : MonoBehaviour
     private void LoadScriptableFromPrefs()
     {
         SceneScriptable selected = null;
+        selectedGender = PlayerPrefs.GetString("SelectedGender", "Femenino"); // Por defecto "Femenino"
 
         if (isLanguageScript)
         {
@@ -91,28 +101,47 @@ public class SceneGameManager : MonoBehaviour
             switch (country)
             {
                 case "Chile":
-                    sceneScripter.Execute(chileScenes);
+                    selected = selectedGender == "Masculino" ? chileScenesMale : chileScenesFem;
                     break;
+
                 case "Argentina":
-                    sceneScripter.Execute(argentinaScenes);
+                    selected = selectedGender == "Masculino" ? argentinaScenesMale : argentinaScenesFem;
                     break;
+
                 case "Perú":
-                    sceneScripter.Execute(peruScenes);
+                    selected = selectedGender == "Masculino" ? peruScenesMale : peruScenesFem;
                     break;
                 case "Peru":
-                    sceneScripter.Execute(peruScenes);
+                    selected = selectedGender == "Masculino" ? peruScenesMale : peruScenesFem;
                     break;
+
                 case "Australia":
-                    sceneScripter.Execute(australiaScenes);
+                    selected = selectedGender == "Masculino" ? australiaScenesMale : australiaScenesFem;
+                    break;
+
+                default:
+                    Debug.LogWarning($"⚠️ País no reconocido: {country}, usando Chile por defecto.");
+                    selected = selectedGender == "Masculino" ? chileScenesMale : chileScenesFem;
                     break;
             }
+            sceneScripter.Execute(selected);
         }
     }
     public void PlayerFadeTo(float alpha, float duration, TweenCallback onComplete)
     {
         playerController.SetAlpha(alpha, duration, onComplete);
     }
-    
+
+    public void SetText(string text)
+    {
+        narrativeText.text = text;
+    }
+
+    public void StartNarration(AudioClip clip)
+    {
+        narrationAudioSource.clip = clip;
+        narrationAudioSource.Play();
+    }
     private void EnsureAudioSources()
     {
         sfxAudioSource1 ??= gameObject.AddComponent<AudioSource>();

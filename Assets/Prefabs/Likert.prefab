@@ -481,6 +481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7251359364873272606}
   - component: {fileID: 4151374160184145546}
+  - component: {fileID: 1268741675948811828}
   m_Layer: 4
   m_Name: Likert
   m_TagString: Untagged
@@ -601,6 +602,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1268741675948811828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2520412604827863381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99a6ea44fb384140a4907fec5159c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3460179141936394373
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,7 +1012,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fe6510501d06c834e8d0994da113ec34, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: fe6510501d06c834e8d0994da113ec34, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -2077,7 +2090,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e549e357ac1b38f4c98cff448a287b18, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: e549e357ac1b38f4c98cff448a287b18, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

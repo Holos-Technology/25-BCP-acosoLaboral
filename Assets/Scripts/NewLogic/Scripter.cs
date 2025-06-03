@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Schema;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -39,6 +40,18 @@ public class Scripter : MonoBehaviour
         }
         OnEnd?.Invoke();
         Debug.Log("[SCRIPT] Simulación completada");
+    }
+
+    public void SetNarration()
+    {
+        foreach (ScriptPartSO step in scriptParts)
+        {
+            if (step.stepType == StepType.Narration)
+            {
+                NarrationStep narStep = step as NarrationStep;
+                SceneGameManager.Instance.SetText(narStep.text);
+            }
+        }
     }
 
 }

@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using NUnit.Framework;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "LikertStep", menuName = "SceneSteps/Likert")]
@@ -5,10 +8,8 @@ public class LikertStep : ScriptPartSO
 {
     [TextArea]
     public string statement;
-    public int scaleFrom = 1;
-    public int scaleTo = 5;
-
-    
+    public bool isMultiAnswer;
+    public List<FeelingEntry> feelings;
     private void OnEnable()
     {
         if (string.IsNullOrEmpty(name) || name.StartsWith("New ")) 
@@ -16,4 +17,13 @@ public class LikertStep : ScriptPartSO
             stepType = StepType.Likert;
         }
     }
+    
+    
+}
+
+[Serializable]
+public class FeelingEntry
+{
+    public string name;
+    public Sprite sprite;
 }

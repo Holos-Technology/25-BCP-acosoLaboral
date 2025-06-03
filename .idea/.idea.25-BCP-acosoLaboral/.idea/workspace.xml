@@ -6,39 +6,76 @@
   <component name="ChangeListManager">
     <list default="true" id="79c44e3c-905f-4d6a-9743-3024aedd9e60" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.25-BCP-acosoLaboral/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.25-BCP-acosoLaboral/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Chile/Hombre/Faena/CHILENA_FAENA.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Chile/Hombre/Faena/CHILENA_FAENA.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Escena reconocimiento/Lobby-NarradorAust-D1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Escena reconocimiento/Lobby-NarradorAust-D1.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Escena reconocimiento/Lobby-NarradorAust-D2.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Escena reconocimiento/Lobby-NarradorAust-D2.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Escena reconocimiento/Lobby-NarradorAust-D3.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Escena reconocimiento/Lobby-NarradorAust-D3.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Escena reconocimiento/Lobby-NarradorAust-D4.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Escena reconocimiento/Lobby-NarradorAust-D4.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Escena reconocimiento/Lobby-NarradorAust-D5.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Escena reconocimiento/Lobby-NarradorAust-D5.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Escena reconocimiento/Lobby-NarradorAust-D6.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Escena reconocimiento/Lobby-NarradorAust-D6.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Escena reconocimiento/Lobby-NarradorAust-D7.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Escena reconocimiento/Lobby-NarradorAust-D7.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Faena/Narrador/Australia/Escena reconocimiento/Lobby-NarradorAust-D1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Faena/Narrador/Australia/Escena reconocimiento/Lobby-NarradorAust-D1.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Faena/Narrador/Australia/Escena reconocimiento/Lobby-NarradorAust-D2.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Faena/Narrador/Australia/Escena reconocimiento/Lobby-NarradorAust-D2.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Faena/Narrador/Australia/Escena reconocimiento/Lobby-NarradorAust-D3.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Faena/Narrador/Australia/Escena reconocimiento/Lobby-NarradorAust-D3.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Faena/Narrador/Australia/Escena reconocimiento/Lobby-NarradorAust-D4.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Faena/Narrador/Australia/Escena reconocimiento/Lobby-NarradorAust-D4.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Faena/Narrador/Australia/Escena reconocimiento/Lobby-NarradorAust-D5.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Faena/Narrador/Australia/Escena reconocimiento/Lobby-NarradorAust-D5.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Faena/Narrador/Australia/Escena reconocimiento/Lobby-NarradorAust-D6.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Faena/Narrador/Australia/Escena reconocimiento/Lobby-NarradorAust-D6.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Faena/Narrador/Australia/Escena reconocimiento/Lobby-NarradorAust-D7.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audios/Faena/Narrador/Australia/Escena reconocimiento/Lobby-NarradorAust-D7.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Argentina/Hombre/Corporativo/Prefabs/HombreArgentinaCorporativo.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Argentina/Hombre/Corporativo/Prefabs/HombreArgentinaCorporativo.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Argentina/Hombre/Faena/Prefabs/HombreArgentinaFaena.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Argentina/Hombre/Faena/Prefabs/HombreArgentinaFaena.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Argentina/Mujer/Corporativo/Prefabs/ArgentinaMujerCorporativo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Argentina/Mujer/Corporativo/Prefabs/ArgentinaMujerCorporativo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Argentina/Mujer/Faena/Prefabs/ArgentinaMujerFaena.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Argentina/Mujer/Faena/Prefabs/ArgentinaMujerFaena.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/Prefabs/M_Aust_Faena.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Australia/Hombre/Faena/Prefabs/M_Aust_Faena.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Chile/Hombre/Corporativo/CHILENO_CORPORATIVO_v3.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Chile/Hombre/Corporativo/CHILENO_CORPORATIVO_v3.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Chile/Hombre/Faena/CHILENO_FAENA_01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Chile/Hombre/Faena/CHILENO_FAENA_01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Chile/Mujer/Hair_Transparency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Chile/Mujer/Hair_Transparency.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Peru/Hombre/Corporativo/Prefabs/PeruHombreCorporativo.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Peru/Hombre/Corporativo/Prefabs/PeruHombreCorporativo.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Peru/Hombre/Faena/Prefabs/PeruMale.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Peru/Hombre/Faena/Prefabs/PeruMale.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Peru/Mujer/Corporativo/Prefabs/MujerPeruanaCorporativo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Peru/Mujer/Corporativo/Prefabs/MujerPeruanaCorporativo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Peru/Mujer/Faena/Materials/MujerPeruFaena/Safety_vest1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Peru/Mujer/Faena/Materials/MujerPeruFaena/Safety_vest1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Countries/Characters/Peru/Mujer/Faena/Prefabs/MujerPeruFaena.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Countries/Characters/Peru/Mujer/Faena/Prefabs/MujerPeruFaena.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Oculus/OculusProjectConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/OculusProjectConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Likert.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Likert.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Faena/Casino.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lobby.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneTestBodyVR.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneTestBodyVR.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FadeInOut.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FadeInOut.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/AudioStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/AudioStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/DialogueStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/DialogueStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/FadeInStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/FadeInStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/FadeOutStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/FadeOutStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/LikertStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/LikertStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/NarrationStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/NarrationStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/QuestionStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/QuestionStep.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestEmptyScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestEmptyScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guiones/Reconocimiento/Englsih.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guiones/Reconocimiento/Englsih.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guiones/Reconocimiento/Spanish/Spanish.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guiones/Reconocimiento/Spanish/Spanish.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/SceneGameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewLogic/SceneGameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/SceneScriptable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewLogic/SceneScriptable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/ScriptPartSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewLogic/ScriptPartSO.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/Scripter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewLogic/Scripter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/TeleportStep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/TeleportStep.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Panel (1).controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Panel (1).controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/Steps/FadeOutStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewLogic/Steps/FadeOutStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/Steps/LikertStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewLogic/Steps/LikertStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewLogic/Steps/NarrationStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewLogic/Steps/NarrationStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SceneSeletor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SceneSeletor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRTemplateAssets/Materials/Anchor Materials/Anchor Blue Glow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRTemplateAssets/Materials/Anchor Materials/Anchor Blue Glow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VRTemplateAssets/Materials/Anchor Materials/Blue Anchor Arrow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VRTemplateAssets/Materials/Anchor Materials/Blue Anchor Arrow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +86,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NewLogic/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5bf0c891ea345fe93688f835df32fdc1dda00/4d/ddf4a4e4/SceneManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NarrativeHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NewLogic/FeelingButtons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NewLogic/SceneGameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.meta.movement/Runtime/Scripts/AnimationRigging/RetargetingLayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.meta.xr.sdk.interaction.ovr/Runtime/Scripts/Input/FromOVRHandDataSource.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -129,6 +170,12 @@
       <workItem from="1748401966291" duration="3342000" />
       <workItem from="1748409668243" duration="1143000" />
       <workItem from="1748453380716" duration="13929000" />
+      <workItem from="1748637794577" duration="2163000" />
+      <workItem from="1748664509723" duration="260000" />
+      <workItem from="1748743672342" duration="3406000" />
+      <workItem from="1748756977737" duration="11000" />
+      <workItem from="1748818607986" duration="5210000" />
+      <workItem from="1748901605801" duration="3727000" />
     </task>
     <servers />
   </component>

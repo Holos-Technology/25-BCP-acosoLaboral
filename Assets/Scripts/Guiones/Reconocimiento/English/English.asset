@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10750ff025e03b84ab5efdbb69e70ea3, type: 3}
+  m_Name: English
+  m_EditorClassIdentifier: 
+  country: N/A
+  scenario: N/A
+  sceneName: Lobby
+  language: English
+  steps:
+  - {fileID: 11400000, guid: dadd1d888ea9a274aad2936daaedb17c, type: 2}
+  - {fileID: 11400000, guid: dafa2dae77fcbf64297eaa2f3bac8e01, type: 2}
+  - {fileID: 11400000, guid: 8944aa1381e27a84495e9b121de837a7, type: 2}
+  - {fileID: 11400000, guid: 5ef96d9d955638f4abbdd2ef22b45e8c, type: 2}
+  - {fileID: 11400000, guid: 07f4f173bd1edf7439e85970e370fd1f, type: 2}
+  - {fileID: 11400000, guid: e7b04b8b6c695194283371a469c4bdf4, type: 2}
+  - {fileID: 11400000, guid: 730a89708161f5a47bfc0f55d7a9130d, type: 2}
+  - {fileID: 11400000, guid: bcccf474277c2e94aa3854837eeb7efc, type: 2}
+  - {fileID: 11400000, guid: bcccf474277c2e94aa3854837eeb7efc, type: 2}
+  - {fileID: 11400000, guid: 46bac25fb4dabcd4cb2ddc6f883d27f0, type: 2}

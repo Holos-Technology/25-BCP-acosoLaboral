@@ -2896,7 +2896,7 @@ MonoBehaviour:
   _skeletonType: 3
   _updateRootPose: 0
   _updateRootScale: 0
-  _enablePhysicsCapsules: 0
+  _enablePhysicsCapsules: 1
   _applyBoneTranslations: 1
   _adjustments:
   - Joint: 0

@@ -13,6 +13,7 @@ public abstract class ScriptPartSO : ScriptableObject
     public UnityEvent OnEnd;
     [Tooltip("Tiempo adicional a esperar luego de este paso")]
     public float extraDelay = 0f;
+    
     /// <summary>
     /// Si el paso requiere espera activa (como un audio), implementa esto.
     /// </summary>

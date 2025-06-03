@@ -25,7 +25,7 @@ public class SceneSeletor : MonoBehaviour
     [SerializeField] private int lobbyIndex;
     [SerializeField] private int corporativeIndex;
     [SerializeField] private int casinoIndex;
-    [SerializeField] private bool debugMode = true;
+    [SerializeField] private bool debugMode = false;
 
 
     [Header("Gender")]
@@ -271,7 +271,7 @@ public class SceneSeletor : MonoBehaviour
                 else
                 {
                     Debug.Log($"🎮 Cargando escena de Lobby (Index: {lobbyIndex})");
-                    SceneManager.LoadScene(intScene);
+                    SceneManager.LoadScene(2);
                 }
             }
         }
