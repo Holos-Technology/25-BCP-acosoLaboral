@@ -12,10 +12,12 @@ public class StartingCanvas : MonoBehaviour
     [SerializeField] private Button startButton;
     [SerializeField] private Button[] countryButtons;
     [SerializeField] private Button[] genderButtons;
+    [SerializeField] private TMP_InputField identifierSearchInput;
 
     private string selectedCountry = "";
     private string selectedGender = "";
     private string selectedScenario = "";
+    private List<string> originalIdentifiers = new List<string>();
 
     [SerializeField] private int lobbyIndex;
     [SerializeField] private int corporativeIndex;
@@ -34,6 +36,7 @@ public class StartingCanvas : MonoBehaviour
         foreach (Button btn in countryButtons)
         {
             btn.onClick.AddListener(() => ClickedCountry(btn));
+            btn.gameObject.SetActive(true);
         }
 
         foreach (Button btn in genderButtons)
@@ -48,6 +51,7 @@ public class StartingCanvas : MonoBehaviour
     void PopulateIdentifierDropdown()
     {
         identifierDropdown.ClearOptions();
+        originalIdentifiers.Clear();
 
         List<string> options = new List<string> { "" }; // 🔹 Opción vacía por defecto
 
@@ -71,13 +75,27 @@ public class StartingCanvas : MonoBehaviour
         else
         {
             options.Add("BCH Program"); // ➕ Agregar si no hay valores
-
-            
         }
 
         identifierDropdown.AddOptions(options);
         identifierDropdown.value = 0;
 
+        originalIdentifiers = new List<string>(options);
+        identifierSearchInput.onValueChanged.RemoveAllListeners();
+        identifierSearchInput.onValueChanged.AddListener(FilterIdentifierDropdown);
+    }
+
+    void FilterIdentifierDropdown(string searchText)
+    {
+        identifierDropdown.ClearOptions();
+
+        List<string> filteredOptions = originalIdentifiers.FindAll(option =>
+            option.ToLower().Contains(searchText.ToLower()) && option != "");
+
+        filteredOptions.Insert(0, "");
+
+        identifierDropdown.AddOptions(filteredOptions);
+        identifierDropdown.value = 0;
     }
 
     void OnScenarioChanged()
@@ -92,6 +110,7 @@ public class StartingCanvas : MonoBehaviour
         selectedCountry = GetCountryName(btn.name);
         UpdateButtonInteractivity(countryButtons, btn);
         Debug.Log(selectedCountry);
+        UpdateScenarioDropdownByCountry();
         ValidateFields();
     }
 
@@ -163,12 +182,47 @@ public class StartingCanvas : MonoBehaviour
         switch (buttonName)
         {
             case "Peru": return "Perú";
-            case "Colombia": return "Colombia";
             case "Argentina": return "Argentina";
             case "Chile": return "Chile";
+            case "Australia": return "Australia"; 
             default: return "";
         }
     }
+
+    void UpdateScenarioDropdownByCountry()
+    {
+        scenarioDropdown.interactable = !string.IsNullOrEmpty(selectedCountry);
+
+        if (selectedCountry == "Australia")
+        {
+            List<TMP_Dropdown.OptionData> limitedOptions = new List<TMP_Dropdown.OptionData>();
+
+            if (scenarioDropdown.options.Count > 1)
+            {
+                limitedOptions.Add(new TMP_Dropdown.OptionData(""));
+                limitedOptions.Add(scenarioDropdown.options[1]);
+                scenarioDropdown.options = limitedOptions;
+                scenarioDropdown.value = 0;
+            }
+        }
+        else
+        {
+            scenarioDropdown.ClearOptions();
+            scenarioDropdown.AddOptions(GetAllScenarioOptions());
+            scenarioDropdown.value = 0;
+        }
+    }
+
+    List<TMP_Dropdown.OptionData> GetAllScenarioOptions()
+    {
+        return new List<TMP_Dropdown.OptionData>
+    {
+        new TMP_Dropdown.OptionData(""),
+        new TMP_Dropdown.OptionData("Faena"),
+        new TMP_Dropdown.OptionData("Corporativo")
+    };
+    }
+
 
     string GetGenderName(string buttonName)
     {
