@@ -12,7 +12,7 @@ public class CharacterTalkStep : MonoBehaviour, IStep
     [SerializeField] private AudioClip chileanAudio;
     [SerializeField] private AudioClip colombianAudio;
     [SerializeField] private AudioClip argentinianAudio;
-
+    [SerializeField] private AudioClip australianAudio; // ✅ Agregado
 
     public UnityEvent onStartStep;
 
@@ -38,19 +38,26 @@ public class CharacterTalkStep : MonoBehaviour, IStep
         characterAudioSource.Play();
 
         // Esperar hasta que termine el audio
-        yield return new WaitForSeconds(selectedClip.length);
+        yield return new WaitWhile(() => characterAudioSource.isPlaying);
     }
 
     private AudioClip GetCharacterAudio()
     {
-        string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile"); // Chile por defecto
+        string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile");
 
         switch (selectedCountry)
         {
-            case "Peru" or "Perú": return peruvianAudio;
-            case "Colombia": return colombianAudio;
-            case "Argentina": return argentinianAudio;
-            default: return chileanAudio; // Chile en todos los demás casos
+            case "Peru":
+            case "Perú":
+                return peruvianAudio;
+            case "Colombia":
+                return colombianAudio;
+            case "Argentina":
+                return argentinianAudio;
+            case "Australia":
+                return australianAudio; // ✅ Australia
+            default:
+                return chileanAudio;
         }
     }
 

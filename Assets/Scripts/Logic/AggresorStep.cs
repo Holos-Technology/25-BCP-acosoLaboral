@@ -14,12 +14,14 @@ public class AggresorStep : MonoBehaviour ,IStep
     [SerializeField] private AudioClip chileanAggressorAudio;
     [SerializeField] private AudioClip colombianAggressorAudio;
     [SerializeField] private AudioClip argentinianAggressorAudio;
+    [SerializeField] private AudioClip australianAggresorAudio;
 
     [Header("Prefab Settings")]
     [SerializeField] private GameObject peruvianAggressorPrefab;
     [SerializeField] private GameObject chileanAggressorPrefab;
     [SerializeField] private GameObject colombianAggressorPrefab;
     [SerializeField] private GameObject argentinianAggressorPrefab;
+    [SerializeField] private GameObject australianAggressorPrefab;
     [SerializeField] private Transform spawnPoint;
 
     [Header("Settings")]
@@ -116,6 +118,7 @@ public class AggresorStep : MonoBehaviour ,IStep
             "Peru" or "Perú" => peruvianAggressorAudio,
             "Colombia" => colombianAggressorAudio,
             "Argentina" => argentinianAggressorAudio,
+            "Australia" => australianAggresorAudio,
             _ => chileanAggressorAudio
         };
     }
@@ -128,6 +131,7 @@ public class AggresorStep : MonoBehaviour ,IStep
             "Peru" or "Perú"  => peruvianAggressorPrefab,
             "Colombia" => colombianAggressorPrefab,
             "Argentina" => argentinianAggressorPrefab,
+            "Australia" => australianAggressorPrefab,
             _ => chileanAggressorPrefab
         };
 

@@ -8,6 +8,7 @@ public class CharacterSpawner : MonoBehaviour
     [SerializeField] private GameObject chileCharacter;
     [SerializeField] private GameObject peruCharacter;
     [SerializeField] private GameObject argentinaCharacter;
+    [SerializeField] private GameObject australiaCharacter;
 
   void Start()
     {
@@ -33,6 +34,9 @@ public class CharacterSpawner : MonoBehaviour
                 break;
             case "Argentina":
                 selectedCharacter = argentinaCharacter;
+                break;
+            case "Australia":
+                selectedCharacter = australiaCharacter;
                 break;
             default:
                 Debug.LogWarning("🌍 País no reconocido en PlayerPrefs: " + selectedCountry);
@@ -63,6 +67,9 @@ public class CharacterSpawner : MonoBehaviour
 
         if (argentinaCharacter != null && argentinaCharacter != activeCharacter)
             Destroy(argentinaCharacter);
+        
+        if (australiaCharacter != null && australiaCharacter != activeCharacter)
+            Destroy(australiaCharacter);
     }
 
     private IEnumerator ResetOVRBodyNextFrame(GameObject character)

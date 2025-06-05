@@ -29,7 +29,8 @@ public class QuestionStep : MonoBehaviour, IStep
     [SerializeField] private bool requireAggressor = false;
 
     [SerializeField] private GameObject agressor;
-    private int selectedAnswerIndex = -1;
+    private List<int> selectedAnswerIndices = new(); // reemplaza selectedAnswerIndex si múltiple
+
     private bool answerConfirmed = false;
     private string selectedCountry;
     [SerializeField]  string questionString = "Selecciona una opción:"; // ✅ Pregunta por defecto
@@ -49,19 +50,22 @@ public class QuestionStep : MonoBehaviour, IStep
     [SerializeField] private string questionJsonData = "";
     [SerializeField] private string questionSceneJsonData = "";
     
-    public void InitializeQuestion()
-    { 
+    private TMP_Text confirmButtonText;
+    [SerializeField] private TMP_Text timeleftText;
+    [SerializeField] private bool allowMultipleSelection = false;
+
+
+       public void InitializeQuestion()
+    {
         if (FormularioManager.Instance == null)
         {
             Debug.LogWarning("⚠️ No hay instancia de FormularioManager.");
             return;
         }
+
         RegisterEmptyQuestion();
     }
 
-    /// <summary>
-    /// Registra la pregunta con "-" en la categoría correspondiente (`isMaleQuestion`)
-    /// </summary>
     private void RegisterEmptyQuestion()
     {
         string selectedScenario = PlayerPrefs.GetString("SelectedScenario", "Faena");
@@ -71,10 +75,8 @@ public class QuestionStep : MonoBehaviour, IStep
         string escenaKey = !string.IsNullOrEmpty(questionSceneJsonData) ? questionSceneJsonData : "Escena Desconocida";
         string questionKey = !string.IsNullOrEmpty(questionJsonData) ? questionJsonData : "Pregunta Desconocida";
 
-        // ✅ Solo registrar en el género correspondiente
         EnsureFieldExists(jugadorKey, escenaKey, questionKey);
     }
-
 
     private void EnsureFieldExists(string jugadorKey, string escenaKey, string questionKey)
     {
@@ -95,141 +97,158 @@ public class QuestionStep : MonoBehaviour, IStep
         FormularioManager.Instance.UpdateAnswer(jugadorKey, jugadorDict);
         FormularioManager.Instance.SaveFormulario();
     }
-        public IEnumerator Execute()
+
+    public IEnumerator Execute()
+    {
+        onStartStep?.Invoke();
+        agressor.SetActive(false);
+        selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile");
+
+        if (confirmButtonText == null)
+            confirmButtonText = confirmButton.GetComponentInChildren<TMP_Text>();
+
+        if (confirmButtonText != null)
+            confirmButtonText.text = selectedCountry == "Australia" ? "Confirm" : "Confirmar";
+        if(timeleftText.text != null)
+            timeleftText.text = selectedCountry == "Australia" ? "Time left" : "Tiempo restante";
+
+        timeRemaining = maxTime;
+        answerConfirmed = false;
+        selectedAnswerIndices.Clear();
+
+        questionText.text = questionString;
+
+        if (initialAudioClip != null)
         {
-            onStartStep?.Invoke();
-            agressor.SetActive(false);
-            selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile"); 
+            audioSource.clip = initialAudioClip;
+            audioSource.Play();
+        }
 
-            timeRemaining = maxTime;
+        confirmButton.interactable = false;
+        multipleChoicePanel.SetActive(true);
+        multipleChoicePanelChild.SetActive(true);
+        StartCoroutine(StartTimer());
 
-            questionText.text = questionString;
-            if (initialAudioClip != null)
-            {
-                audioSource.clip = initialAudioClip;
-                audioSource.Play();
-            }
-
-            confirmButton.interactable = false;
-            selectedAnswerIndex = -1;
-            answerConfirmed = false;
-
-            multipleChoicePanel.SetActive(true);
-            multipleChoicePanelChild.SetActive(true);
-            StartCoroutine(StartTimer());
-
-            // Configurar botones según las opciones
-            for (int i = 0; i < multipleChoiceButtons.Length; i++)
-            {
-                if (i < options.Count)
-                {
-                    multipleChoiceButtons[i].gameObject.SetActive(true);
-                    buttonTexts[i].text = options[i].answerText;
-                    int index = i;
-                    multipleChoiceButtons[i].onClick.RemoveAllListeners();
-                    multipleChoiceButtons[i].onClick.AddListener(() => SelectAnswer(index));
-                    multipleChoiceButtons[i].GetComponent<Image>().color = defaultButtonColor;
-                }
-                else
-                {
-                    multipleChoiceButtons[i].gameObject.SetActive(false);
-                }
-            }
-
-            confirmButton.onClick.RemoveAllListeners();
-            confirmButton.onClick.AddListener(() => StartCoroutine(ConfirmAnswer()));
-
-            yield return new WaitUntil(() => answerConfirmed || timerExpired);
-            if (!answerConfirmed)
-            {
-                answerConfirmed = true;
-
-                string selectedScenario = PlayerPrefs.GetString("SelectedScenario", "Faena");
-                string genderKey = isMaleQuestion ? "Masculino" : "Femenino";
-                string jugadorKey = $"Jugador {genderKey} {selectedScenario}";
-
-                string escenaKey = !string.IsNullOrEmpty(questionSceneJsonData) ? questionSceneJsonData : "Escena Desconocida";
-                string questionKey = !string.IsNullOrEmpty(questionJsonData) ? questionJsonData : "Pregunta Desconocida";
-
-                if (FormularioManager.Instance != null)
-                {
-                    var jugadorDict = (Dictionary<string, object>)FormularioManager.Instance.formulario.fields[jugadorKey];
-                    var escenaDict = (Dictionary<string, object>)jugadorDict[escenaKey];
-                    escenaDict[questionKey] = "Fuera de tiempo";
-                    jugadorDict[escenaKey] = escenaDict;
-                    FormularioManager.Instance.UpdateAnswer(jugadorKey, jugadorDict);
-                    FormularioManager.Instance.SaveFormulario();
-
-                    Debug.Log($"⏰ Tiempo agotado. Registrada respuesta automática.");
-                }
-
-                multipleChoicePanelChild.SetActive(false);
-            }
-
-            // 🔊 Reproducir audio si se confirmó (no si fue por timeout)
-            if (answerConfirmed && selectedAnswerIndex >= 0)
-            {
-                string country = PlayerPrefs.GetString("SelectedCountry", "Chile");
-                AudioClip selectedClip = options[selectedAnswerIndex].GetAudioByCountry(country);
-                if (requireAggressor)
-                {
-                    agressor.SetActive(true);
-                }
-                if (selectedClip != null)
-                {
-                    audioSource.clip = selectedClip;
-                    audioSource.Play();
-                    yield return new WaitWhile(() => audioSource.isPlaying);
-                }
-            }
-
-        // ✅ Ahora sí desactivar el panel completo y continuar
-            multipleChoicePanel.SetActive(false);
-
-     
-
-            onQuestionAnswered?.Invoke();
-       }
-
-        private IEnumerator StartTimer()
+        for (int i = 0; i < multipleChoiceButtons.Length; i++)
         {
-            timerExpired = false;
-
-            while (timeRemaining > 0 && !answerConfirmed)
+            if (i < options.Count)
             {
-                timeRemaining -= Time.deltaTime;
-                timerText.text = Mathf.Ceil(timeRemaining).ToString();
-                yield return null;
+                multipleChoiceButtons[i].gameObject.SetActive(true);
+                buttonTexts[i].text = options[i].answerText;
+                int index = i;
+                multipleChoiceButtons[i].onClick.RemoveAllListeners();
+                multipleChoiceButtons[i].onClick.AddListener(() => SelectAnswer(index));
+                multipleChoiceButtons[i].GetComponent<Image>().color = defaultButtonColor;
             }
-
-            if (!answerConfirmed && timeRemaining <= 0)
+            else
             {
-                timerExpired = true;
-                confirmButton.interactable = false;
+                multipleChoiceButtons[i].gameObject.SetActive(false);
             }
         }
+
+        confirmButton.onClick.RemoveAllListeners();
+        confirmButton.onClick.AddListener(() => StartCoroutine(ConfirmAnswer()));
+
+        yield return new WaitUntil(() => answerConfirmed || timerExpired);
+
+        if (!answerConfirmed)
+        {
+            answerConfirmed = true;
+
+            string selectedScenario = PlayerPrefs.GetString("SelectedScenario", "Faena");
+            string genderKey = isMaleQuestion ? "Masculino" : "Femenino";
+            string jugadorKey = $"Jugador {genderKey} {selectedScenario}";
+
+            string escenaKey = !string.IsNullOrEmpty(questionSceneJsonData) ? questionSceneJsonData : "Escena Desconocida";
+            string questionKey = !string.IsNullOrEmpty(questionJsonData) ? questionJsonData : "Pregunta Desconocida";
+
+            if (FormularioManager.Instance != null)
+            {
+                var jugadorDict = (Dictionary<string, object>)FormularioManager.Instance.formulario.fields[jugadorKey];
+                var escenaDict = (Dictionary<string, object>)jugadorDict[escenaKey];
+                escenaDict[questionKey] = "Fuera de tiempo";
+                jugadorDict[escenaKey] = escenaDict;
+                FormularioManager.Instance.UpdateAnswer(jugadorKey, jugadorDict);
+                FormularioManager.Instance.SaveFormulario();
+
+                Debug.Log("⏰ Tiempo agotado. Registrada respuesta automática.");
+            }
+
+            multipleChoicePanelChild.SetActive(false);
+        }
+
+        if (answerConfirmed && selectedAnswerIndices.Count > 0 && !allowMultipleSelection)
+        {
+            AudioClip selectedClip = options[selectedAnswerIndices[0]].GetAudioByCountry(selectedCountry);
+
+            if (requireAggressor)
+                agressor.SetActive(true);
+
+            if (selectedClip != null)
+            {
+                audioSource.clip = selectedClip;
+                audioSource.Play();
+                yield return new WaitWhile(() => audioSource.isPlaying);
+            }
+        }
+
+        multipleChoicePanel.SetActive(false);
+        onQuestionAnswered?.Invoke();
+    }
+
+    private IEnumerator StartTimer()
+    {
+        timerExpired = false;
+
+        while (timeRemaining > 0 && !answerConfirmed)
+        {
+            timeRemaining -= Time.deltaTime;
+            timerText.text = Mathf.Ceil(timeRemaining).ToString();
+            yield return null;
+        }
+
+        if (!answerConfirmed && timeRemaining <= 0)
+        {
+            timerExpired = true;
+            confirmButton.interactable = false;
+        }
+    }
 
     private void SelectAnswer(int index)
     {
-        selectedAnswerIndex = index;
-        confirmButton.interactable = true;
-        
-        // Restaurar colores
-        foreach (Button button in multipleChoiceButtons)
+        if (allowMultipleSelection)
         {
-            button.GetComponent<Image>().color = defaultButtonColor;
+            if (selectedAnswerIndices.Contains(index))
+            {
+                selectedAnswerIndices.Remove(index);
+                multipleChoiceButtons[index].GetComponent<Image>().color = defaultButtonColor;
+            }
+            else
+            {
+                selectedAnswerIndices.Add(index);
+                multipleChoiceButtons[index].GetComponent<Image>().color = selectedButtonColor;
+            }
+
+            confirmButton.interactable = selectedAnswerIndices.Count > 0;
         }
-        
-        // Cambiar color del botón seleccionado
-        multipleChoiceButtons[selectedAnswerIndex].GetComponent<Image>().color = selectedButtonColor;
-    
+        else
+        {
+            selectedAnswerIndices.Clear();
+            selectedAnswerIndices.Add(index);
+            confirmButton.interactable = true;
+
+            for (int i = 0; i < multipleChoiceButtons.Length; i++)
+            {
+                multipleChoiceButtons[i].GetComponent<Image>().color =
+                    i == index ? selectedButtonColor : defaultButtonColor;
+            }
+        }
     }
 
     private IEnumerator ConfirmAnswer()
     {
         answerConfirmed = true;
 
-        string selectedAnswer = options[selectedAnswerIndex].answerText;
         string selectedScenario = PlayerPrefs.GetString("SelectedScenario", "Faena");
         string country = PlayerPrefs.GetString("SelectedCountry", "Chile");
 
@@ -253,16 +272,26 @@ public class QuestionStep : MonoBehaviour, IStep
                 jugadorDict[escenaKey] = new Dictionary<string, object>();
 
             var escenaDict = (Dictionary<string, object>)jugadorDict[escenaKey];
-            escenaDict[questionKey] = selectedAnswer;
+
+            if (allowMultipleSelection)
+            {
+                List<string> selectedAnswers = new();
+                foreach (int idx in selectedAnswerIndices)
+                    selectedAnswers.Add(options[idx].answerText);
+
+                escenaDict[questionKey] = string.Join(" / ", selectedAnswers);
+            }
+            else
+            {
+                escenaDict[questionKey] = options[selectedAnswerIndices[0]].answerText;
+            }
 
             jugadorDict[escenaKey] = escenaDict;
             FormularioManager.Instance.UpdateAnswer(jugadorKey, jugadorDict);
             FormularioManager.Instance.SaveFormulario();
         }
 
-        // 🔸 Solo ocultar el hijo aquí
         multipleChoicePanelChild.SetActive(false);
-
         yield return null;
     }
 
@@ -276,15 +305,17 @@ public class AnswerOption
     public AudioClip chileanAudio;
     public AudioClip colombianAudio;
     public AudioClip argentinianAudio;
+    public AudioClip australianAudio;
 
     public AudioClip GetAudioByCountry(string country)
     {
         return country switch
         {
-            "Peru" or "Perú"=> peruvianAudio,
+            "Peru" or "Perú" => peruvianAudio,
             "Colombia" => colombianAudio,
             "Argentina" => argentinianAudio,
+            "Australia" => australianAudio,
             _ => chileanAudio
-        } ?? null;
+        };
     }
 }
