@@ -19,6 +19,8 @@ public class LikertStep : MonoBehaviour,IStep
     [Header("Settings")]
     [SerializeField] private float maxTime = 60f;
     [SerializeField] private string questionString = "Seleccione la emoción que sintió:";
+    [SerializeField] private string questionTextEnglish = "Select the emotion you felt:";
+
     [SerializeField] private string questionJsonData = ""; // ✅ Clave de la pregunta
     [SerializeField] private string questionSceneJsonData = ""; // ✅ Clave de la escena
 
@@ -34,6 +36,7 @@ public class LikertStep : MonoBehaviour,IStep
     [SerializeField] private AudioSource audioSource;
     private bool answerConfirmed = false;
     [SerializeField] private AudioClip initialAudioClip; // 🎵 Nuevo AudioClip inicial
+    [SerializeField] private AudioClip audioEnglish;
     
     public UnityEvent onStartStep;
     private float currentTimeRemaining;
@@ -108,8 +111,17 @@ public class LikertStep : MonoBehaviour,IStep
     aggressorGameObject.SetActive(false);
 
     // Configurar la pregunta en la UI
-    questionText.text = questionString;
+    string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile");
+    bool isEnglish = selectedCountry == "Australia";
 
+// Asignar texto en base al idioma
+    questionText.text = isEnglish ? questionTextEnglish : questionString;
+
+// Reproducir audio si hay clip asignado
+    audioSource.clip = isEnglish ? audioEnglish : initialAudioClip;
+    if (audioSource.clip != null)
+        audioSource.Play();
+    
     // Inicializar pantalla
     likertPanel.SetActive(true);
     confirmButton.interactable = false;
@@ -257,8 +269,9 @@ public class LikertStep : MonoBehaviour,IStep
         yield return null;
     }
     
-    public void SetQuestion(string newQuestion)
+    public void SetQuestion(string newQuestionSpanish, string newQuestionEnglish)
     {
-        questionString = newQuestion;
+        questionString = newQuestionSpanish;
+        questionTextEnglish = newQuestionEnglish;
     }
 }

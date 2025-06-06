@@ -21,6 +21,7 @@ public class QuestionStep : MonoBehaviour, IStep
     [Header("Audio Settings")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip initialAudioClip;
+    [SerializeField] private AudioClip initialAudioEnglishClip;
     [Header("Answer Options")]
     [SerializeField] private List<AnswerOption> options = new List<AnswerOption>();
 
@@ -34,7 +35,8 @@ public class QuestionStep : MonoBehaviour, IStep
     private bool answerConfirmed = false;
     private string selectedCountry;
     [SerializeField]  string questionString = "Selecciona una opción:"; // ✅ Pregunta por defecto
-    
+    [SerializeField] private string englishQuestionString = "Select an option:";
+
     [Header("Events")]
     public UnityEvent onQuestionAnswered;
 
@@ -116,14 +118,15 @@ public class QuestionStep : MonoBehaviour, IStep
         answerConfirmed = false;
         selectedAnswerIndices.Clear();
 
-        questionText.text = questionString;
+        questionText.text = selectedCountry == "Australia" ? englishQuestionString : questionString;
 
-        if (initialAudioClip != null)
+        AudioClip questioClip = selectedCountry == "Australia" ? initialAudioEnglishClip : initialAudioClip;
+        if (questioClip != null)
         {
-            audioSource.clip = initialAudioClip;
+            audioSource.clip = questioClip;
             audioSource.Play();
         }
-
+        
         confirmButton.interactable = false;
         multipleChoicePanel.SetActive(true);
         multipleChoicePanelChild.SetActive(true);
@@ -134,7 +137,10 @@ public class QuestionStep : MonoBehaviour, IStep
             if (i < options.Count)
             {
                 multipleChoiceButtons[i].gameObject.SetActive(true);
-                buttonTexts[i].text = options[i].answerText;
+                buttonTexts[i].text = selectedCountry == "Australia" 
+                    ? options[i].englishAnswerText 
+                    : options[i].answerText;
+
                 int index = i;
                 multipleChoiceButtons[i].onClick.RemoveAllListeners();
                 multipleChoiceButtons[i].onClick.AddListener(() => SelectAnswer(index));
@@ -277,13 +283,19 @@ public class QuestionStep : MonoBehaviour, IStep
             {
                 List<string> selectedAnswers = new();
                 foreach (int idx in selectedAnswerIndices)
-                    selectedAnswers.Add(options[idx].answerText);
+                {
+                    selectedAnswers.Add(selectedCountry == "Australia"
+                        ? options[idx].englishAnswerText
+                        : options[idx].answerText);
+                }
 
                 escenaDict[questionKey] = string.Join(" / ", selectedAnswers);
             }
             else
             {
-                escenaDict[questionKey] = options[selectedAnswerIndices[0]].answerText;
+                escenaDict[questionKey] = selectedCountry == "Australia"
+                    ? options[selectedAnswerIndices[0]].englishAnswerText
+                    : options[selectedAnswerIndices[0]].answerText;
             }
 
             jugadorDict[escenaKey] = escenaDict;
@@ -301,6 +313,7 @@ public class QuestionStep : MonoBehaviour, IStep
 public class AnswerOption
 {
     public string answerText;
+    public string englishAnswerText;
     public AudioClip peruvianAudio;
     public AudioClip chileanAudio;
     public AudioClip colombianAudio;

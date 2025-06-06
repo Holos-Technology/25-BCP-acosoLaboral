@@ -11,8 +11,10 @@ public class NarrationStep : MonoBehaviour, IStep
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Vector3 startPosition;
     [SerializeField] private AudioClip narrationAudio;
+    [SerializeField] private AudioClip englishNarrationAudio;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private TextMeshProUGUI  narrationtext;
+    [SerializeField] private string englishNarrationText;
     [SerializeField] private string narrationText;
 
     public UnityEvent onStartStep { get; }
@@ -28,13 +30,15 @@ public class NarrationStep : MonoBehaviour, IStep
         }
 
         playerTransform.position = startPosition;
-        audioSource.clip = narrationAudio;
+        string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile");
+        audioSource.clip = selectedCountry == "Australia" ? englishNarrationAudio : narrationAudio;      
         audioSource.Play();
         yield return new WaitForSeconds(narrationAudio.length);
     }
 
     public void LoadText()
     {
-        narrationtext.text = narrationText;
+        string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile");
+        narrationtext.text = selectedCountry == "Australia" ? englishNarrationText : narrationText;
     }
 }
