@@ -15,6 +15,7 @@ public class LikertStep : MonoBehaviour,IStep
     [SerializeField] private Button[] emotionButtons;
     [SerializeField] private Button confirmButton;
     [SerializeField] private TMP_Text timerText;
+    [SerializeField] private TMP_Text timeLeftText;
 
     [Header("Settings")]
     [SerializeField] private float maxTime = 60f;
@@ -116,6 +117,7 @@ public class LikertStep : MonoBehaviour,IStep
 
 // Asignar texto en base al idioma
     questionText.text = isEnglish ? questionTextEnglish : questionString;
+    timeLeftText.text = isEnglish ? "Time left:" : "Tiempo restante:";
 
 // Reproducir audio si hay clip asignado
     audioSource.clip = isEnglish ? audioEnglish : initialAudioClip;
