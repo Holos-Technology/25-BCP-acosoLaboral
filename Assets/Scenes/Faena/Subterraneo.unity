@@ -3666,7 +3666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 635530387}
   startPosition: {x: -25.45, y: 0, z: 0}
-  narrationAudio: {fileID: 8300000, guid: 10d9623a0c3fe854dbbbf9e5b6656f30, type: 3}
+  narrationAudio: {fileID: 8300000, guid: d17622e5c9c78f24491c85180ac18cbf, type: 3}
   audioSource: {fileID: 165570351}
   narrationtext: {fileID: 1121820857}
   narrationText: Later, Michelle moves through the underground site, when she suddenly

@@ -2143,8 +2143,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0000039339066, y: 0.21}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.0000039339066, y: -0.1}
+  m_SizeDelta: {x: 0.26, y: 0.22}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &81576178
 MonoBehaviour:
@@ -2201,7 +2201,7 @@ MonoBehaviour:
   m_fontSizeMax: 0.05
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -14581,8 +14581,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000002346933, y: 0.21}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.000002346933, y: -0.1}
+  m_SizeDelta: {x: 0.26, y: 0.22}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &441244541
 MonoBehaviour:
@@ -14639,7 +14639,7 @@ MonoBehaviour:
   m_fontSizeMax: 0.05
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -15167,8 +15167,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.00000021606684, y: 0.21}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.00000021606684, y: -0.1}
+  m_SizeDelta: {x: 0.26, y: 0.22}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &479080970
 MonoBehaviour:
@@ -15225,7 +15225,7 @@ MonoBehaviour:
   m_fontSizeMax: 0.05
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -15751,7 +15751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1801735617}
   startPosition: {x: -25.45, y: 0, z: -9}
-  narrationAudio: {fileID: 8300000, guid: 6dd80d3dbbd138742954488e76c75f12, type: 3}
+  narrationAudio: {fileID: 8300000, guid: 221bcddd8c0b56542b67148b6ba4bb7e, type: 3}
   audioSource: {fileID: 1951176679}
   narrationtext: {fileID: 1844062899}
   narrationText: Michelle is a young mining engineer starting her shift at the site,
@@ -26590,7 +26590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 1801735617}
   startPosition: {x: -25.45, y: 0, z: -9}
-  narrationAudio: {fileID: 8300000, guid: 7ee11bdb2b361c641ab949ba91736c5a, type: 3}
+  narrationAudio: {fileID: 8300000, guid: c3841c391f07a514a9e11d0797618b94, type: 3}
   audioSource: {fileID: 1951176679}
   narrationtext: {fileID: 1844062899}
   narrationText: Michelle is a young mining engineer starting her work shift at a
@@ -38906,8 +38906,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000000022351742, y: 0.21}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.000000022351742, y: -0.1}
+  m_SizeDelta: {x: 0.26, y: 0.22}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1501905591
 MonoBehaviour:
@@ -38964,7 +38964,7 @@ MonoBehaviour:
   m_fontSizeMax: 0.05
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -46840,8 +46840,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0000018104911, y: 0.21}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.0000018104911, y: -0.17}
+  m_SizeDelta: {x: 0.25, y: 0.23}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1821857293
 MonoBehaviour:
@@ -51690,8 +51690,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.000002913177, y: 0.21}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.000002913177, y: -0.1}
+  m_SizeDelta: {x: 0.26, y: 0.22}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2000663626
 MonoBehaviour:
@@ -51748,7 +51748,7 @@ MonoBehaviour:
   m_fontSizeMax: 0.05
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
