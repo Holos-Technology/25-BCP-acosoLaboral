@@ -7533,8 +7533,10 @@ MonoBehaviour:
   - {fileID: 65982415}
   confirmButton: {fileID: 1938911812}
   timerText: {fileID: 650487370}
+  timeLeftText: {fileID: 0}
   maxTime: 60
   questionString: "Seleccione la o las emociones que sinti\xF3"
+  questionTextEnglish: 'Select the emotion you felt:'
   questionJsonData: Emocion Sentida por Invitacion Fuera de Lugar
   questionSceneJsonData: Escena 2 Cena para dos
   aggressorGameObject: {fileID: 314683821}
@@ -7544,9 +7546,22 @@ MonoBehaviour:
       m_Calls: []
   audioSource: {fileID: 1096826645}
   initialAudioClip: {fileID: 8300000, guid: 27fbd41bca702ad45b4065686b0ce2f5, type: 3}
+  audioEnglish: {fileID: 0}
   onStartStep:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1096826645}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &330236888
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9711,7 +9726,8 @@ MonoBehaviour:
   peruvianAudio: {fileID: 8300000, guid: 3c918022e024be847b08d1b189711a9f, type: 3}
   chileanAudio: {fileID: 8300000, guid: 823b8258dcc82d943a1aafe06c05618f, type: 3}
   colombianAudio: {fileID: 0}
-  argentinianAudio: {fileID: 8300000, guid: fdca9d9ff97293e49be33524f7340cf4, type: 3}
+  argentinianAudio: {fileID: 8300000, guid: 8b1076bec670d1e478f6270a557c39a0, type: 3}
+  australianAudio: {fileID: 0}
   onStartStep:
     m_PersistentCalls:
       m_Calls:
@@ -13102,35 +13118,57 @@ MonoBehaviour:
   timerText: {fileID: 180853048}
   audioSource: {fileID: 52893010}
   initialAudioClip: {fileID: 8300000, guid: 898e68a9b0baa6046b0939b684178dfe, type: 3}
+  initialAudioEnglishClip: {fileID: 0}
   options:
   - answerText: Si
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: No
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: No sabe
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   maxTime: 60
   requireAggressor: 0
   agressor: {fileID: 314683821}
   questionString: "Frente a esta situaci\xF3n, \xBFusted considera que hay acoso
     por parte de la jefatura?"
+  englishQuestionString: 'Select an option:'
   onQuestionAnswered:
     m_PersistentCalls:
       m_Calls: []
   onStartStep:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 52893010}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   questionJsonData: Acoso de Jefatura
   questionSceneJsonData: Escena 2 Cena para dos
+  timeleftText: {fileID: 1466033994}
+  allowMultipleSelection: 0
 --- !u!4 &570819308
 Transform:
   m_ObjectHideFlags: 0
@@ -15074,38 +15112,50 @@ MonoBehaviour:
   timerText: {fileID: 180853048}
   audioSource: {fileID: 52893010}
   initialAudioClip: {fileID: 8300000, guid: 26d535f4c2b961847b91384e4e91f382, type: 3}
+  initialAudioEnglishClip: {fileID: 0}
   options:
   - answerText: "Acepta la invitaci\xF3n para evitar tensiones"
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: "Rechaza la invitaci\xF3n con firmeza indicando que es inapropiada
       y transgrede la Ley Karin"
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: "Reporta la conducta al \xE1rea de recursos humanos"
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: "Guarda silencio debido a que no sabe qu\xE9 responder"
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: "Piensa que la empresa no es un buen lugar para trabajar y eval\xFAa
       renunciar"
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   maxTime: 60
   requireAggressor: 0
   agressor: {fileID: 314683821}
   questionString: "Frente a esta situaci\xF3n usted"
+  englishQuestionString: 'Select an option:'
   onQuestionAnswered:
     m_PersistentCalls:
       m_Calls:
@@ -15123,9 +15173,23 @@ MonoBehaviour:
         m_CallState: 2
   onStartStep:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 52893010}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   questionJsonData: Accion por Invitacion Fuera de Lugar
   questionSceneJsonData: Escena 2 Cena para dos
+  timeleftText: {fileID: 1466033994}
+  allowMultipleSelection: 0
 --- !u!82 &635512002
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19945,36 +20009,48 @@ MonoBehaviour:
   timerText: {fileID: 180853048}
   audioSource: {fileID: 52893010}
   initialAudioClip: {fileID: 8300000, guid: 9c78b5b22e1d8744b875ba9b465fad1c, type: 3}
+  initialAudioEnglishClip: {fileID: 0}
   options:
   - answerText: Transgrede la Ley Karin
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: Es algo normal que hacen los jefes varones
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: No respeta el reglamento interno
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: "Es una situaci\xF3n que se debe denunciar"
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: No le parece tan grave
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   maxTime: 60
   requireAggressor: 0
   agressor: {fileID: 314683821}
   questionString: Frente a esta experiencia, usted cree que la conducta de la jefatura
+  englishQuestionString: 'Select an option:'
   onQuestionAnswered:
     m_PersistentCalls:
       m_Calls:
@@ -19992,9 +20068,23 @@ MonoBehaviour:
         m_CallState: 2
   onStartStep:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 52893010}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   questionJsonData: Conducta de Jefatura
   questionSceneJsonData: Escena 2 Cena para dos
+  timeleftText: {fileID: 1466033994}
+  allowMultipleSelection: 0
 --- !u!1001 &857692193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20789,7 +20879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f3edaa356171a574c8957a74d6298800, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1926420748252291069, guid: f3edaa356171a574c8957a74d6298800, type: 3}
       propertyPath: m_TagString
@@ -21699,49 +21789,77 @@ MonoBehaviour:
   timerText: {fileID: 180853048}
   audioSource: {fileID: 52893010}
   initialAudioClip: {fileID: 8300000, guid: 06d78ff398cb1a74fa49d35b590c5c02, type: 3}
+  initialAudioEnglishClip: {fileID: 0}
   options:
   - answerText: Acoso verbal
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: "Acoso psicol\xF3gico"
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: "Acoso f\xEDsico"
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: Acoso laboral
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: Acoso sexual
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: Ninguno
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   maxTime: 60
   requireAggressor: 0
   agressor: {fileID: 314683821}
   questionString: "\xBFQu\xE9 tipo de acoso distingue en la escena?"
+  englishQuestionString: 'Select an option:'
   onQuestionAnswered:
     m_PersistentCalls:
       m_Calls: []
   onStartStep:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 52893010}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   questionJsonData: Tipo de Acoso
   questionSceneJsonData: Escena 2 Cena para dos
+  timeleftText: {fileID: 1466033994}
+  allowMultipleSelection: 0
 --- !u!1001 &894309601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27715,7 +27833,7 @@ MonoBehaviour:
   peruvianAggressorAudio: {fileID: 8300000, guid: 7f319499739361a42891e72c6fbb63ad, type: 3}
   chileanAggressorAudio: {fileID: 8300000, guid: 1c9ea61851441f84f9f2f500987e4445, type: 3}
   colombianAggressorAudio: {fileID: 0}
-  argentinianAggressorAudio: {fileID: 8300000, guid: c82fb5217f19e0647b7c8fd152d51541, type: 3}
+  argentinianAggressorAudio: {fileID: 8300000, guid: 1d86e31af9052a348bf459497b16fecc, type: 3}
   australianAggresorAudio: {fileID: 0}
   peruvianAggressorPrefab: {fileID: 8672909865069552995, guid: 1b0c795c119437549b55aef3fb7db717, type: 3}
   chileanAggressorPrefab: {fileID: 1174673238412989164, guid: 568ca9b2bfe67014ab0397576b263cd7, type: 3}
@@ -34131,7 +34249,7 @@ MonoBehaviour:
   peruvianAggressorAudio: {fileID: 8300000, guid: 9ae4f7844c6d94745b70e7fe499ac786, type: 3}
   chileanAggressorAudio: {fileID: 8300000, guid: 715625d08cd95174792f3f5c0abbbef6, type: 3}
   colombianAggressorAudio: {fileID: 0}
-  argentinianAggressorAudio: {fileID: 8300000, guid: 9a7e96a88392e26478193461c76ebfa7, type: 3}
+  argentinianAggressorAudio: {fileID: 8300000, guid: 970e3e10a22e2ad40b5b196589840148, type: 3}
   australianAggresorAudio: {fileID: 0}
   peruvianAggressorPrefab: {fileID: 8672909865069552995, guid: 1b0c795c119437549b55aef3fb7db717, type: 3}
   chileanAggressorPrefab: {fileID: 1174673238412989164, guid: 568ca9b2bfe67014ab0397576b263cd7, type: 3}
@@ -35410,6 +35528,10 @@ PrefabInstance:
     - target: {fileID: 3657922026170305727, guid: 937d3a917f32dae4cbba07a6f1865b53, type: 3}
       propertyPath: m_Name
       value: MujerPeruanaCorporativo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3657922026170305727, guid: 937d3a917f32dae4cbba07a6f1865b53, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3870555464162885496, guid: 937d3a917f32dae4cbba07a6f1865b53, type: 3}
       propertyPath: currentEditType
@@ -43820,6 +43942,10 @@ PrefabInstance:
     - target: {fileID: 5826488997283255100, guid: 928d0f40000c63d4799008a1a37ae6de, type: 3}
       propertyPath: m_Name
       value: ArgentinaCorporativoPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 5826488997283255100, guid: 928d0f40000c63d4799008a1a37ae6de, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6597782747878132102, guid: 928d0f40000c63d4799008a1a37ae6de, type: 3}
       propertyPath: m_LocalPosition.x
