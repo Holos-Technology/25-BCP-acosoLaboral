@@ -313,7 +313,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 9584466}
-  clipToPlay: {fileID: 8300000, guid: c72731ccceae1fd4eb3af89e56456cae, type: 3}
+  clipToPlaySpanish: {fileID: 8300000, guid: c72731ccceae1fd4eb3af89e56456cae, type: 3}
+  clipToPlayEnglish: {fileID: 8300000, guid: 7e46087da026bb74db00380c7608060e, type: 3}
   extraWaitTime: 1.5
   OnFinished:
     m_PersistentCalls:
@@ -1455,7 +1456,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 168108049}
-  clipToPlay: {fileID: 8300000, guid: d2c8a93f6ba511a438bb878bb09262df, type: 3}
+  clipToPlaySpanish: {fileID: 8300000, guid: d2c8a93f6ba511a438bb878bb09262df, type: 3}
+  clipToPlayEnglish: {fileID: 8300000, guid: c1a2c8f5dfc20404ebf28564cc197497, type: 3}
   extraWaitTime: 3
   OnFinished:
     m_PersistentCalls:
@@ -2301,7 +2303,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 272205131}
-  clipToPlay: {fileID: 8300000, guid: 49fc11884eff3844e88251eabb4d0c31, type: 3}
+  clipToPlaySpanish: {fileID: 8300000, guid: 49fc11884eff3844e88251eabb4d0c31, type: 3}
+  clipToPlayEnglish: {fileID: 8300000, guid: 326d690599ff8e54bb4ae33524197211, type: 3}
   extraWaitTime: 1.5
   OnFinished:
     m_PersistentCalls:
@@ -7692,7 +7695,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 800161850}
-  clipToPlay: {fileID: 8300000, guid: 46a2e83455bb1094794a0ddf72383c18, type: 3}
+  clipToPlaySpanish: {fileID: 8300000, guid: 46a2e83455bb1094794a0ddf72383c18, type: 3}
+  clipToPlayEnglish: {fileID: 8300000, guid: 4182259bad412c540a15cf4acab77675, type: 3}
   extraWaitTime: 1.5
   OnFinished:
     m_PersistentCalls:
@@ -8205,7 +8209,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 872759970}
-  clipToPlay: {fileID: 8300000, guid: 0f57c95a12fcae8448e533a891a5d6f4, type: 3}
+  clipToPlaySpanish: {fileID: 8300000, guid: 0f57c95a12fcae8448e533a891a5d6f4, type: 3}
+  clipToPlayEnglish: {fileID: 8300000, guid: d0c672873b8e42845bb169b9b1fcc107, type: 3}
   extraWaitTime: 1.5
   OnFinished:
     m_PersistentCalls:
@@ -9395,7 +9400,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 932071093}
-  clipToPlay: {fileID: 8300000, guid: e53210ccfc743204385c329b4b5039cc, type: 3}
+  clipToPlaySpanish: {fileID: 8300000, guid: e53210ccfc743204385c329b4b5039cc, type: 3}
+  clipToPlayEnglish: {fileID: 8300000, guid: 95771d53ae368b84fb96348af55343b7, type: 3}
   extraWaitTime: 1.5
   OnFinished:
     m_PersistentCalls:
@@ -19397,7 +19403,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1777236047}
-  clipToPlay: {fileID: 8300000, guid: e24257486373ac240b45b91968b25d4f, type: 3}
+  clipToPlaySpanish: {fileID: 8300000, guid: e24257486373ac240b45b91968b25d4f, type: 3}
+  clipToPlayEnglish: {fileID: 8300000, guid: bec1f4273bb8c814e90fd403bada3071, type: 3}
   extraWaitTime: 1.5
   OnFinished:
     m_PersistentCalls:

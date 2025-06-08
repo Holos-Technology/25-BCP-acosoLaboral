@@ -2,12 +2,15 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class PlaySoundStep : MonoBehaviour,IStep
 {  
     [Header("Audio Settings")]
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip clipToPlay;
+    [FormerlySerializedAs("clipToPlay")] [SerializeField] private AudioClip clipToPlaySpanish;
+    [SerializeField] private AudioClip clipToPlayEnglish;
+
     [SerializeField] private float extraWaitTime = 3f; // Tiempo extra después de que termine el audio
     
     public UnityEvent OnFinished;
@@ -24,23 +27,41 @@ public class PlaySoundStep : MonoBehaviour,IStep
     [SerializeField] private float skipDelay = 5f; // tiempo para saltar si no hay interacción
     private Coroutine skipCoroutine;
 
+      private AudioClip SelectedClip
+    {
+        get
+        {
+            string selectedLanguage = PlayerPrefs.GetString("SelectedLanguage", "Spanish");
+            string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile"); // Default Chile
+
+            // Solo usar el audio en inglés si es Australia + Inglés
+            if (selectedLanguage == "English" && selectedCountry == "Australia" && clipToPlayEnglish != null)
+            {
+                return clipToPlayEnglish;
+            }
+            else
+            {
+                return clipToPlaySpanish;
+            }
+        }
+    }
 
     public void StartPlayingAudioOnLoop()
     {
-        if (audioSource == null || clipToPlay == null)
+        if (audioSource == null || SelectedClip == null)
         {
             Debug.LogWarning("PlaySoundStep: No audio source or clip assigned.");
             return;
         }
 
         audioSource.loop = true;
-        audioSource.clip = clipToPlay;
+        audioSource.clip = SelectedClip;
         audioSource.Play();
     }
 
     public IEnumerator Execute()
     {
-        if (clipToPlay == null || audioSource == null)
+        if (SelectedClip == null || audioSource == null)
         {
             Debug.LogWarning("PlaySoundStep: No audio source or clip assigned.");
             yield break;
@@ -50,10 +71,10 @@ public class PlaySoundStep : MonoBehaviour,IStep
         OnStart?.Invoke();
 
         audioSource.loop = false;
-        audioSource.clip = clipToPlay;
+        audioSource.clip = SelectedClip;
         audioSource.Play();
 
-        yield return new WaitForSeconds(clipToPlay.length + extraWaitTime);
+        yield return new WaitForSeconds(SelectedClip.length + extraWaitTime);
 
         if (requiresTrigger)
         {
@@ -97,6 +118,7 @@ public class PlaySoundStep : MonoBehaviour,IStep
             waitingForTrigger = false;
         }
     }   
+
     private void TryToContinue(Collider other)
     {
         if (requiresTrigger && waitingForTrigger && !string.IsNullOrEmpty(requiredTriggerTag) && other.CompareTag(requiredTriggerTag))

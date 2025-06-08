@@ -126,6 +126,7 @@ public class AggresorStep : MonoBehaviour ,IStep
     private GameObject SpawnAggressorPrefab()
     {
         string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile");
+
         GameObject prefabToSpawn = selectedCountry switch
         {
             "Peru" or "Perú"  => peruvianAggressorPrefab,
@@ -135,16 +136,18 @@ public class AggresorStep : MonoBehaviour ,IStep
             _ => chileanAggressorPrefab
         };
 
-        if (prefabToSpawn == null) return null;
+        if (prefabToSpawn == null)
+        {
+            Debug.LogError($"🚨 El prefab para el país '{selectedCountry}' no está asignado en el inspector.");
+            return null;
+        }
 
-        // ✅ Crear agresor en `spawnPoint`
         GameObject newAggressor = Instantiate(prefabToSpawn, spawnPoint.position, spawnPoint.rotation);
         newAggressor.transform.SetParent(spawnPoint, false);
         newAggressor.transform.localPosition = Vector3.zero;
         newAggressor.transform.localRotation = Quaternion.identity;
         newAggressor.transform.localScale = Vector3.one;
 
-        Debug.Log("✨ Agresor generado en (0,0,0): " + newAggressor.name);
         return newAggressor;
     }
 }

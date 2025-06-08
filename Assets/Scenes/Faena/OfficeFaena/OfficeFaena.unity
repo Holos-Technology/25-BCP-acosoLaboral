@@ -327,8 +327,11 @@ MonoBehaviour:
   playerTransform: {fileID: 446989934}
   startPosition: {x: -25.45, y: 0, z: 0}
   narrationAudio: {fileID: 8300000, guid: ff2f9c9c384c5084ea4755369ab76079, type: 3}
+  englishNarrationAudio: {fileID: 8300000, guid: d0140bcdd3ea2bf4ca03eea071e59d18, type: 3}
   audioSource: {fileID: 403441706}
   narrationtext: {fileID: 2031979289}
+  englishNarrationText: Near the end of the workday, Michelle finds herself alone
+    in the office when Pete, enters.
   narrationText: "Laura se encuentra sola en una oficina, y entra el supervisor Carlos
     \u2026"
 --- !u!4 &16553858
@@ -1434,33 +1437,43 @@ MonoBehaviour:
   timerText: {fileID: 603071448}
   audioSource: {fileID: 916603687}
   initialAudioClip: {fileID: 8300000, guid: 26de1581b20a2f04282e4b50913343c6, type: 3}
+  initialAudioEnglishClip: {fileID: 8300000, guid: 11d1bca6ff17ae8438464e88dc17d8c6, type: 3}
   options:
   - answerText: No, por temor a potenciales represalias
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: 'No, porque estimo que dichas conductas son cosas que pasan en una
       faena '
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: "S\xED, en los canales internos de la empresa "
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   - answerText: "S\xED, directamente en la Direcci\xF3n del Trabajo"
+    englishAnswerText: 
     peruvianAudio: {fileID: 0}
     chileanAudio: {fileID: 0}
     colombianAudio: {fileID: 0}
     argentinianAudio: {fileID: 0}
+    australianAudio: {fileID: 0}
   maxTime: 60
   requireAggressor: 0
   agressor: {fileID: 1993345211}
   questionString: "Ante lo sucedido con su supervisor usted har\xEDa una denuncia
     por acoso:"
+  englishQuestionString: 'Select an option:'
   onQuestionAnswered:
     m_PersistentCalls:
       m_Calls:
@@ -1481,6 +1494,8 @@ MonoBehaviour:
       m_Calls: []
   questionJsonData: Denuncia por Acoso
   questionSceneJsonData: Etapa 3 Peligro
+  timeleftText: {fileID: 0}
+  allowMultipleSelection: 0
 --- !u!1 &144174593
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,8 +2053,10 @@ MonoBehaviour:
   - {fileID: 96993270}
   confirmButton: {fileID: 809715678}
   timerText: {fileID: 134491862}
+  timeLeftText: {fileID: 0}
   maxTime: 60
   questionString: "Seleccione la o las emociones que sinti\xF3"
+  questionTextEnglish: 'Select the emotion you felt:'
   questionJsonData: Emocion Sentida por Acoso
   questionSceneJsonData: Etapa 3 Peligro
   aggressorGameObject: {fileID: 1993345211}
@@ -2049,6 +2066,7 @@ MonoBehaviour:
       m_Calls: []
   audioSource: {fileID: 1929973496}
   initialAudioClip: {fileID: 8300000, guid: ad6341b14c614a245957d5e6ecf5e137, type: 3}
+  audioEnglish: {fileID: 8300000, guid: bfad0e45de4d0c340919c9cc0dbcf06f, type: 3}
   onStartStep:
     m_PersistentCalls:
       m_Calls:
@@ -2657,7 +2675,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 277632458}
-  clipToPlay: {fileID: 8300000, guid: 713b63e6ebbe5c14cb483670308cb7e7, type: 3}
+  clipToPlaySpanish: {fileID: 8300000, guid: 713b63e6ebbe5c14cb483670308cb7e7, type: 3}
+  clipToPlayEnglish: {fileID: 0}
   extraWaitTime: 2
   OnFinished:
     m_PersistentCalls:
@@ -4915,6 +4934,7 @@ MonoBehaviour:
   chileanAudio: {fileID: 8300000, guid: a8cd0e493e6bf124baa5d73b42836c4c, type: 3}
   colombianAudio: {fileID: 0}
   argentinianAudio: {fileID: 8300000, guid: 2e5553eb2e398b74d99cc6e4e0e23e45, type: 3}
+  australianAudio: {fileID: 8300000, guid: 38458f13894705f40bf8fcf0bd2dac8f, type: 3}
   onStartStep:
     m_PersistentCalls:
       m_Calls:
@@ -5572,8 +5592,11 @@ MonoBehaviour:
   playerTransform: {fileID: 446989934}
   startPosition: {x: -25.45, y: 0, z: 0}
   narrationAudio: {fileID: 8300000, guid: 9e84465f648ee954aa37471305e3e27f, type: 3}
+  englishNarrationAudio: {fileID: 8300000, guid: d0140bcdd3ea2bf4ca03eea071e59d18, type: 3}
   audioSource: {fileID: 403441706}
   narrationtext: {fileID: 2031979289}
+  englishNarrationText: Near the end of the workday, Michelle finds herself alone
+    in the office when Pete, enters.
   narrationText: Casi al finalizar la jornada, Laura se encuentra sola en la oficina,
     y entra su supervisor Carlos
 --- !u!1 &496437066
@@ -9779,10 +9802,12 @@ MonoBehaviour:
   chileanAggressorAudio: {fileID: 8300000, guid: b061e4c1ae0796e41992c39af9f6f086, type: 3}
   colombianAggressorAudio: {fileID: 0}
   argentinianAggressorAudio: {fileID: 8300000, guid: c916664bc15959a42a23548567695176, type: 3}
+  australianAggresorAudio: {fileID: 8300000, guid: 411be7eb7d791df43b97303f24275f65, type: 3}
   peruvianAggressorPrefab: {fileID: 893811968526298102, guid: 0228adf7e65aa0747848898804d551ff, type: 3}
   chileanAggressorPrefab: {fileID: 356910156284278295, guid: cbdc49aeb2be33c4bb33e2a8bfb1c564, type: 3}
   colombianAggressorPrefab: {fileID: 0}
   argentinianAggressorPrefab: {fileID: 4008819916795536551, guid: 7e159f65896aeac42951dc27b6c9cf35, type: 3}
+  australianAggressorPrefab: {fileID: 0}
   spawnPoint: {fileID: 1993345212}
   destroyAggressorOnFinish: 0
   OnPlayStepEvent:
@@ -15118,10 +15143,12 @@ MonoBehaviour:
   chileanAggressorAudio: {fileID: 8300000, guid: 4c6f7b4006952eb4e92339509c5e8cb1, type: 3}
   colombianAggressorAudio: {fileID: 0}
   argentinianAggressorAudio: {fileID: 8300000, guid: d0ae0c757983f4e4bb529252095e34c9, type: 3}
+  australianAggresorAudio: {fileID: 8300000, guid: 422fd23e225a32c4e945c2234d5ff342, type: 3}
   peruvianAggressorPrefab: {fileID: 893811968526298102, guid: 0228adf7e65aa0747848898804d551ff, type: 3}
   chileanAggressorPrefab: {fileID: 356910156284278295, guid: cbdc49aeb2be33c4bb33e2a8bfb1c564, type: 3}
   colombianAggressorPrefab: {fileID: 0}
   argentinianAggressorPrefab: {fileID: 4008819916795536551, guid: 7e159f65896aeac42951dc27b6c9cf35, type: 3}
+  australianAggressorPrefab: {fileID: 0}
   spawnPoint: {fileID: 1993345212}
   destroyAggressorOnFinish: 0
   OnPlayStepEvent:
@@ -18001,8 +18028,10 @@ MonoBehaviour:
   - {fileID: 96993270}
   confirmButton: {fileID: 809715678}
   timerText: {fileID: 134491862}
+  timeLeftText: {fileID: 0}
   maxTime: 60
   questionString: "Seleccione la o las emociones que sinti\xF3"
+  questionTextEnglish: 'Select the emotion you felt:'
   questionJsonData: Emocion Sentida por Acoso
   questionSceneJsonData: Etapa 3 Peligro
   aggressorGameObject: {fileID: 1993345211}
@@ -18024,6 +18053,7 @@ MonoBehaviour:
         m_CallState: 2
   audioSource: {fileID: 1929973496}
   initialAudioClip: {fileID: 8300000, guid: ad6341b14c614a245957d5e6ecf5e137, type: 3}
+  audioEnglish: {fileID: 8300000, guid: 4b57c7870e49044428cc898f936767a1, type: 3}
   onStartStep:
     m_PersistentCalls:
       m_Calls:

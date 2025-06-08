@@ -3350,7 +3350,7 @@ MonoBehaviour:
   timerText: {fileID: 397157289}
   audioSource: {fileID: 1322719442}
   initialAudioClip: {fileID: 8300000, guid: 2ceb54438cebc324296bc24b6c68587a, type: 3}
-  initialAudioEnglishClip: {fileID: 0}
+  initialAudioEnglishClip: {fileID: 8300000, guid: 243cd5e0c65bf6748b3428784b24c1b1, type: 3}
   options:
   - answerText: "Estoy aqu\xED porque tengo las competencias necesarias para este
       trabajo. As\xED que espero que podamos trabajar juntos de manera profesional"
@@ -3385,7 +3385,7 @@ MonoBehaviour:
   requireAggressor: 1
   agressor: {fileID: 1191429487}
   questionString: "Seleccione la respuesta que m\xE1s la identifique:"
-  englishQuestionString: 'Select an option:'
+  englishQuestionString: 'elect the response that best represents you:'
   onQuestionAnswered:
     m_PersistentCalls:
       m_Calls:
@@ -4994,6 +4994,7 @@ MonoBehaviour:
   - {fileID: 2036029979}
   confirmButton: {fileID: 317500530}
   timerText: {fileID: 1516655070}
+  timeLeftText: {fileID: 0}
   maxTime: 60
   questionString: "Seleccione la o las emociones que sinti\xF3"
   questionTextEnglish: 'Select the emotion you felt:'
@@ -5018,7 +5019,7 @@ MonoBehaviour:
         m_CallState: 2
   audioSource: {fileID: 601531176}
   initialAudioClip: {fileID: 8300000, guid: ad6341b14c614a245957d5e6ecf5e137, type: 3}
-  audioEnglish: {fileID: 8300000, guid: 540c2f4e3254a3943b2b59d758af9697, type: 3}
+  audioEnglish: {fileID: 8300000, guid: bfad0e45de4d0c340919c9cc0dbcf06f, type: 3}
   onStartStep:
     m_PersistentCalls:
       m_Calls:
@@ -12257,7 +12258,7 @@ MonoBehaviour:
   playerTransform: {fileID: 1801735617}
   startPosition: {x: -25.45, y: 0, z: -9}
   narrationAudio: {fileID: 8300000, guid: 3d9a3f29c41ff2f4ba8beb3232c818c1, type: 3}
-  englishNarrationAudio: {fileID: 8300000, guid: 33f04beac6fd02548aa835ecbd21007f, type: 3}
+  englishNarrationAudio: {fileID: 8300000, guid: a72e35b9b6de9d0468837315b0809f88, type: 3}
   audioSource: {fileID: 1951176679}
   narrationtext: {fileID: 1844062899}
   englishNarrationText: Michelle is a young mining engineer starting her shift at
@@ -17890,7 +17891,7 @@ MonoBehaviour:
   timerText: {fileID: 397157289}
   audioSource: {fileID: 1322719442}
   initialAudioClip: {fileID: 8300000, guid: 3685389bc7a2bf74da81d209636063f3, type: 3}
-  initialAudioEnglishClip: {fileID: 8300000, guid: 9e4a86f55bd5cdc418c41339513050c1, type: 3}
+  initialAudioEnglishClip: {fileID: 8300000, guid: 0259a9de6ba01ed469f330bad210dd55, type: 3}
   options:
   - answerText: Normal para el trabajo en faena
     englishAnswerText: Normal in the workplace
@@ -23973,7 +23974,7 @@ MonoBehaviour:
   playerTransform: {fileID: 1801735617}
   startPosition: {x: -25.45, y: 0, z: -9}
   narrationAudio: {fileID: 8300000, guid: 89f5b3c0e5c05dd46b8ba47fcf08bffe, type: 3}
-  englishNarrationAudio: {fileID: 8300000, guid: 457415c229d13d245b2cc0357c00f812, type: 3}
+  englishNarrationAudio: {fileID: 8300000, guid: 834ee339fce0c164fa349f18c98cf0d4, type: 3}
   audioSource: {fileID: 1951176679}
   narrationtext: {fileID: 1844062899}
   englishNarrationText: 'Michelle is a young mining engineer starting her work shift
@@ -29732,6 +29733,7 @@ MonoBehaviour:
   - {fileID: 2036029979}
   confirmButton: {fileID: 317500530}
   timerText: {fileID: 1516655070}
+  timeLeftText: {fileID: 0}
   maxTime: 60
   questionString: "Seleccione la o las emociones que sinti\xF3:"
   questionTextEnglish: 'Select the emotion you felt:'
@@ -29744,7 +29746,7 @@ MonoBehaviour:
       m_Calls: []
   audioSource: {fileID: 601531176}
   initialAudioClip: {fileID: 8300000, guid: ad6341b14c614a245957d5e6ecf5e137, type: 3}
-  audioEnglish: {fileID: 8300000, guid: 540c2f4e3254a3943b2b59d758af9697, type: 3}
+  audioEnglish: {fileID: 8300000, guid: af072e1bda832ee438fb28d047f17e53, type: 3}
   onStartStep:
     m_PersistentCalls:
       m_Calls:
@@ -43310,7 +43312,7 @@ MonoBehaviour:
   timerText: {fileID: 397157289}
   audioSource: {fileID: 1322719442}
   initialAudioClip: {fileID: 8300000, guid: 2ceb54438cebc324296bc24b6c68587a, type: 3}
-  initialAudioEnglishClip: {fileID: 0}
+  initialAudioEnglishClip: {fileID: 8300000, guid: 38acaf951bc831d43b1f33270ec223ae, type: 3}
   options:
   - answerText: "Estoy aqu\xED para trabajar igual que todos los dem\xE1s"
     englishAnswerText: "I\u2019m here to work just like everyone else"
@@ -43331,7 +43333,7 @@ MonoBehaviour:
   requireAggressor: 1
   agressor: {fileID: 1191429487}
   questionString: "Seleccione la respuesta que m\xE1s la identifique:"
-  englishQuestionString: 'Select an option:'
+  englishQuestionString: Select the response that best represents you
   onQuestionAnswered:
     m_PersistentCalls:
       m_Calls: []
