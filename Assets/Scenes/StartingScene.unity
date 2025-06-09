@@ -7308,11 +7308,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5781603308060602426, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -252.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5781603308060602426, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 64.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5781603308060602426, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -7688,11 +7688,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8086637849004729033, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 252.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8086637849004729033, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 569.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8086637849004729033, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -7944,11 +7944,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8237709773642950422, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -84.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8237709773642950422, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 232.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8237709773642950422, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -8048,6 +8048,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3026085653699606962, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
+    - {fileID: 7681438228353490683, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
+    - {fileID: 8219461499154803352, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8150073722760532074, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
