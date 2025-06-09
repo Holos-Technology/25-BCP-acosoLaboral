@@ -10794,8 +10794,8 @@ MonoBehaviour:
   peruvianAggressorAudio: {fileID: 8300000, guid: 003560cbebf2e574ca704557a36e70b1, type: 3}
   chileanAggressorAudio: {fileID: 8300000, guid: 3753192a188e9c44f8b8afed5606afed, type: 3}
   colombianAggressorAudio: {fileID: 0}
-  argentinianAggressorAudio: {fileID: 8300000, guid: 2652cb2d7230d22429f56afa2fd493cd, type: 3}
-  australianAggresorAudio: {fileID: 0}
+  argentinianAggressorAudio: {fileID: 8300000, guid: 22875ca19c7364a42bf0bbbe1498212e, type: 3}
+  australianAggresorAudio: {fileID: 8300000, guid: 45291a0f036dfcf428aff43a61ccd267, type: 3}
   peruvianAggressorPrefab: {fileID: 893811968526298102, guid: 0228adf7e65aa0747848898804d551ff, type: 3}
   chileanAggressorPrefab: {fileID: 356910156284278295, guid: cbdc49aeb2be33c4bb33e2a8bfb1c564, type: 3}
   colombianAggressorPrefab: {fileID: 0}
@@ -33640,7 +33640,7 @@ MonoBehaviour:
   peruvianAggressorAudio: {fileID: 8300000, guid: 576b3eb5029c22f40af25186b9020ce1, type: 3}
   chileanAggressorAudio: {fileID: 8300000, guid: b54085f0671d31641a0f79ca5a4c4e9e, type: 3}
   colombianAggressorAudio: {fileID: 0}
-  argentinianAggressorAudio: {fileID: 8300000, guid: e3129cfeda88cc345bf23f3bd6ed57ac, type: 3}
+  argentinianAggressorAudio: {fileID: 8300000, guid: 12047bbb97241e347943d0afba332fde, type: 3}
   australianAggresorAudio: {fileID: 8300000, guid: c4d17d36074b944489fb45e67a7ae00f, type: 3}
   peruvianAggressorPrefab: {fileID: 893811968526298102, guid: 0228adf7e65aa0747848898804d551ff, type: 3}
   chileanAggressorPrefab: {fileID: 356910156284278295, guid: cbdc49aeb2be33c4bb33e2a8bfb1c564, type: 3}
