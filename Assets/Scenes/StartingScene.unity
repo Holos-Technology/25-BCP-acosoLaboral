@@ -1492,7 +1492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
-  m_DragThreshold: 10
+  m_DragThreshold: 40
 --- !u!4 &538903493
 Transform:
   m_ObjectHideFlags: 0
@@ -5304,7 +5304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2609c54f376cffc4da1ab9401cc1a36f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skeletonType: 4
+  _skeletonType: 0
   _updateRootPose: 0
   _updateRootScale: 1
   _enablePhysicsCapsules: 0
@@ -5948,7 +5948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2609c54f376cffc4da1ab9401cc1a36f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skeletonType: 5
+  _skeletonType: 1
   _updateRootPose: 0
   _updateRootScale: 1
   _enablePhysicsCapsules: 0
@@ -7422,7 +7422,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6205551497864791401, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
       propertyPath: m_Options.m_Options.Array.size
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205551497864791401, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[0].m_Text
+      value: Faena
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205551497864791401, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[1].m_Text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6205551497864791401, guid: 9f642d414f8259f4b802adee2312e4f4, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size

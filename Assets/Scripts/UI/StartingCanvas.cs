@@ -185,7 +185,7 @@ public class StartingCanvas : MonoBehaviour
 
     void ValidateFields()
     {
-        bool allFieldsFilled = scenarioDropdown.value != 0 &&
+        bool allFieldsFilled = (scenarioDropdown.options.Count == 1 || scenarioDropdown.value != 0) &&
                                identifierDropdown.value != 0 &&
                                !string.IsNullOrEmpty(selectedCountry) &&
                                !string.IsNullOrEmpty(selectedGender);
