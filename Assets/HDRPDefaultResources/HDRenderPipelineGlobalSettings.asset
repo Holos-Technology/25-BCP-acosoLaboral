@@ -239,7 +239,7 @@ MonoBehaviour:
       type: {class: LookDevVolumeProfileSettings, ns: UnityEngine.Rendering.HighDefinition, asm: Unity.RenderPipelines.HighDefinition.Runtime}
       data:
         m_Version: 0
-        m_VolumeProfile: {fileID: 11400000, guid: 0c6c445e633a29142968524ceac80e22, type: 2}
+        m_VolumeProfile: {fileID: 11400000, guid: 3e456b2d4d2bfe14c9cd9af09aa654e2, type: 2}
     - rid: 3282727253052227954
       type: {class: WaterSystemRuntimeResources, ns: UnityEngine.Rendering.HighDefinition, asm: Unity.RenderPipelines.HighDefinition.Runtime}
       data:
@@ -457,8 +457,8 @@ MonoBehaviour:
         m_Version: 0
         m_Camera:
           bitDatas:
-            data1: 5770166122053453
-            data2: 12934340311651418136
+            data1: 5770166096887629
+            data2: 3710968271575416856
           lodBias: 1
           lodBiasMode: 0
           lodBiasQualityLevel: 0
