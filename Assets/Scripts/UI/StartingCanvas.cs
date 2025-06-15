@@ -17,6 +17,7 @@ public class StartingCanvas : MonoBehaviour
     private string selectedCountry = "";
     private string selectedGender = "";
     private string selectedScenario = "";
+    private string selectedLanguage = "es";
     private List<string> originalIdentifiers = new List<string>();
 
     [SerializeField] private int lobbyIndex;
@@ -24,19 +25,33 @@ public class StartingCanvas : MonoBehaviour
     [SerializeField] private int casinoIndex;
     [SerializeField] private bool debugMode = true;
 
+    [SerializeField] private GameObject panelOptions;
+    [SerializeField] private GameObject panelLanguage;
+
+    [SerializeField] private TMP_Dropdown languageDropdown;
+    [SerializeField] private Button confirmLanguageButton;
+    [SerializeField] private Button backLanguageButton;
+
     void Start()
     {
+        panelLanguage.SetActive(true);
+        panelOptions.SetActive(false);
+
+        confirmLanguageButton.onClick.AddListener(ConfirmLanguageSelection);
+        backLanguageButton.onClick.AddListener(BackToLanguageSelection);
+
+        languageDropdown.options.Clear();
+        languageDropdown.AddOptions(new List<string> { "Español", "English" });
+
         startButton.interactable = false;
         startButton.onClick.AddListener(LoadSelectedScene);
 
         scenarioDropdown.onValueChanged.AddListener(delegate { OnScenarioChanged(); });
         identifierDropdown.onValueChanged.AddListener(delegate { ValidateFields(); });
-        //instructorDropdown.onValueChanged.AddListener(delegate { ValidateFields(); });
 
         foreach (Button btn in countryButtons)
         {
             btn.onClick.AddListener(() => ClickedCountry(btn));
-            btn.gameObject.SetActive(true);
         }
 
         foreach (Button btn in genderButtons)
@@ -47,6 +62,56 @@ public class StartingCanvas : MonoBehaviour
         PopulateIdentifierDropdown();
 
     }
+
+    void ConfirmLanguageSelection()
+    {
+        selectedLanguage = languageDropdown.options[languageDropdown.value].text == "English" ? "en" : "es";
+        PlayerPrefs.SetString("language", selectedLanguage);
+        PlayerPrefs.Save();
+
+        ApplyLanguageConfiguration();
+
+        panelLanguage.SetActive(false);
+        panelOptions.SetActive(true);
+    }
+
+    void BackToLanguageSelection()
+    {
+        panelOptions.SetActive(false);
+        panelLanguage.SetActive(true);
+    }
+
+    void ApplyLanguageConfiguration()
+    {
+        selectedLanguage = PlayerPrefs.GetString("language", "es");
+
+        foreach (Button btn in countryButtons)
+        {
+            if (btn.name == "Australia")
+                btn.gameObject.SetActive(selectedLanguage == "en");
+            else
+                btn.gameObject.SetActive(selectedLanguage == "es");
+        }
+
+        scenarioDropdown.ClearOptions();
+
+        if (selectedLanguage == "en")
+        {
+            scenarioDropdown.AddOptions(new List<TMP_Dropdown.OptionData>
+            {
+                new TMP_Dropdown.OptionData(""),
+                new TMP_Dropdown.OptionData("Task")
+            });
+        }
+        else
+        {
+            scenarioDropdown.AddOptions(GetAllScenarioOptions());
+        }
+
+        scenarioDropdown.value = 0;
+        selectedScenario = "";
+    }
+
 
     void PopulateIdentifierDropdown()
     {
@@ -100,8 +165,9 @@ public class StartingCanvas : MonoBehaviour
 
     void OnScenarioChanged()
     {
-        selectedScenario =
-            scenarioDropdown.options[scenarioDropdown.value].text; // ✅ Ahora guarda el escenario correctamente
+        string selectedText = scenarioDropdown.options[scenarioDropdown.value].text;
+        selectedScenario = selectedLanguage == "en" && selectedText == "Task" ? "Faena" : selectedText;
+
         ValidateFields();
     }
 
@@ -193,17 +259,15 @@ public class StartingCanvas : MonoBehaviour
     {
         scenarioDropdown.interactable = !string.IsNullOrEmpty(selectedCountry);
 
-        if (selectedCountry == "Australia")
+        if (selectedCountry == "Australia" && selectedLanguage == "en")
         {
-            List<TMP_Dropdown.OptionData> limitedOptions = new List<TMP_Dropdown.OptionData>();
-
-            if (scenarioDropdown.options.Count > 1)
+            scenarioDropdown.ClearOptions();
+            scenarioDropdown.AddOptions(new List<TMP_Dropdown.OptionData>
             {
-                limitedOptions.Add(new TMP_Dropdown.OptionData(""));
-                limitedOptions.Add(scenarioDropdown.options[1]);
-                scenarioDropdown.options = limitedOptions;
-                scenarioDropdown.value = 0;
-            }
+                new TMP_Dropdown.OptionData(""),
+                new TMP_Dropdown.OptionData("Task")
+            });
+            scenarioDropdown.value = 0;
         }
         else
         {
