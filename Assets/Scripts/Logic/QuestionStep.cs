@@ -100,33 +100,34 @@ public class QuestionStep : MonoBehaviour, IStep
         FormularioManager.Instance.SaveFormulario();
     }
 
-    public IEnumerator Execute()
+      public IEnumerator Execute()
     {
         onStartStep?.Invoke();
         agressor.SetActive(false);
-        selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile");
+        string selectedLanguage = PlayerPrefs.GetString("language", "es");
+        bool isEnglish = selectedLanguage == "en";
 
         if (confirmButtonText == null)
             confirmButtonText = confirmButton.GetComponentInChildren<TMP_Text>();
 
         if (confirmButtonText != null)
-            confirmButtonText.text = selectedCountry == "Australia" ? "Confirm" : "Confirmar";
-        if(timeleftText.text != null)
-            timeleftText.text = selectedCountry == "Australia" ? "Time left" : "Tiempo restante";
+            confirmButtonText.text = isEnglish ? "Confirm" : "Confirmar";
+        if (timeleftText != null)
+            timeleftText.text = isEnglish ? "Time left" : "Tiempo restante";
 
         timeRemaining = maxTime;
         answerConfirmed = false;
         selectedAnswerIndices.Clear();
 
-        questionText.text = selectedCountry == "Australia" ? englishQuestionString : questionString;
+        questionText.text = isEnglish ? englishQuestionString : questionString;
 
-        AudioClip questioClip = selectedCountry == "Australia" ? initialAudioEnglishClip : initialAudioClip;
+        AudioClip questioClip = isEnglish ? initialAudioEnglishClip : initialAudioClip;
         if (questioClip != null)
         {
             audioSource.clip = questioClip;
             audioSource.Play();
         }
-        
+
         confirmButton.interactable = false;
         multipleChoicePanel.SetActive(true);
         multipleChoicePanelChild.SetActive(true);
@@ -137,8 +138,8 @@ public class QuestionStep : MonoBehaviour, IStep
             if (i < options.Count)
             {
                 multipleChoiceButtons[i].gameObject.SetActive(true);
-                buttonTexts[i].text = selectedCountry == "Australia" 
-                    ? options[i].englishAnswerText 
+                buttonTexts[i].text = isEnglish
+                    ? options[i].englishAnswerText
                     : options[i].answerText;
 
                 int index = i;
@@ -185,6 +186,7 @@ public class QuestionStep : MonoBehaviour, IStep
 
         if (answerConfirmed && selectedAnswerIndices.Count > 0 && !allowMultipleSelection)
         {
+            string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile");
             AudioClip selectedClip = options[selectedAnswerIndices[0]].GetAudioByCountry(selectedCountry);
 
             if (requireAggressor)
@@ -256,7 +258,8 @@ public class QuestionStep : MonoBehaviour, IStep
         answerConfirmed = true;
 
         string selectedScenario = PlayerPrefs.GetString("SelectedScenario", "Faena");
-        string country = PlayerPrefs.GetString("SelectedCountry", "Chile");
+        string selectedLanguage = PlayerPrefs.GetString("language", "es");
+        bool isEnglish = selectedLanguage == "en";
 
         string genderKey = isMaleQuestion ? "Masculino" : "Femenino";
         string jugadorKey = $"Jugador {genderKey} {selectedScenario}";
@@ -284,7 +287,7 @@ public class QuestionStep : MonoBehaviour, IStep
                 List<string> selectedAnswers = new();
                 foreach (int idx in selectedAnswerIndices)
                 {
-                    selectedAnswers.Add(selectedCountry == "Australia"
+                    selectedAnswers.Add(isEnglish
                         ? options[idx].englishAnswerText
                         : options[idx].answerText);
                 }
@@ -293,7 +296,7 @@ public class QuestionStep : MonoBehaviour, IStep
             }
             else
             {
-                escenaDict[questionKey] = selectedCountry == "Australia"
+                escenaDict[questionKey] = isEnglish
                     ? options[selectedAnswerIndices[0]].englishAnswerText
                     : options[selectedAnswerIndices[0]].answerText;
             }

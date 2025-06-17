@@ -102,97 +102,97 @@ public class LikertStep : MonoBehaviour,IStep
     }
 
    public IEnumerator Execute()
-{ 
-    onStartStep?.Invoke();
-    if (initialAudioClip != null)
     {
-        audioSource.clip = initialAudioClip;
-        audioSource.Play();
-    }
-    aggressorGameObject.SetActive(false);
-
-    // Configurar la pregunta en la UI
-    string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile");
-    bool isEnglish = selectedCountry == "Australia";
-
-// Asignar texto en base al idioma
-    questionText.text = isEnglish ? questionTextEnglish : questionString;
-    timeLeftText.text = isEnglish ? "Time left:" : "Tiempo restante:";
-
-// Reproducir audio si hay clip asignado
-    audioSource.clip = isEnglish ? audioEnglish : initialAudioClip;
-    if (audioSource.clip != null)
-        audioSource.Play();
-    
-    // Inicializar pantalla
-    likertPanel.SetActive(true);
-    confirmButton.interactable = false;
-    selectedEmotions.Clear();
-    answerConfirmed = false;
-
-    currentTimeRemaining = maxTime;
-    StartCoroutine(StartTimer());
- 
-    // Configurar botones
-    for (int i = 0; i < emotionButtons.Length; i++)
-    {
-        int index = i;
-        emotionButtons[i].onClick.RemoveAllListeners();
-        emotionButtons[i].onClick.AddListener(() => ToggleEmotion(index));
-        emotionButtons[i].interactable = true;
-        emotionButtons[i].image.color = Color.white;
-    }
-
-    confirmButton.onClick.RemoveAllListeners();
-    confirmButton.onClick.AddListener(() => StartCoroutine(ConfirmAnswer()));
-    yield return new WaitUntil(() => answerConfirmed || currentTimeRemaining <= 0);
-    if (!answerConfirmed)
-    {
-        answerConfirmed = true;
-
-        string selectedScenario = PlayerPrefs.GetString("SelectedScenario", "Faena");
-        string genderKey = isMaleQuestion ? "Masculino" : "Femenino";
-        string jugadorKey = $"Jugador {genderKey} {selectedScenario}";
-
-        string escenaKey = !string.IsNullOrEmpty(questionSceneJsonData) ? questionSceneJsonData : "Escena Desconocida";
-        string questionKey = !string.IsNullOrEmpty(questionJsonData) ? questionJsonData : "Pregunta Desconocida";
-
-        if (FormularioManager.Instance != null)
+        onStartStep?.Invoke();
+        if (initialAudioClip != null)
         {
-            if (FormularioManager.Instance.formulario.fields == null)
-                FormularioManager.Instance.formulario.fields = new Dictionary<string, object>();
-
-            if (!FormularioManager.Instance.formulario.fields.ContainsKey(jugadorKey))
-                FormularioManager.Instance.UpdateAnswer(jugadorKey, new Dictionary<string, object>());
-
-            var jugadorDict = (Dictionary<string, object>)FormularioManager.Instance.formulario.fields[jugadorKey];
-
-            if (!jugadorDict.ContainsKey(escenaKey))
-                jugadorDict[escenaKey] = new Dictionary<string, object>();
-
-            var escenaDict = (Dictionary<string, object>)jugadorDict[escenaKey];
-            escenaDict[questionKey] = "Fuera de tiempo";
-
-            jugadorDict[escenaKey] = escenaDict;
-            FormularioManager.Instance.UpdateAnswer(jugadorKey, jugadorDict);
-            FormularioManager.Instance.SaveFormulario();
-
-            Debug.Log($"⏰ Tiempo agotado. Registrada respuesta automática: {jugadorKey} -> {escenaKey} -> {questionKey}: Fuera de tiempo");
+            audioSource.clip = initialAudioClip;
+            audioSource.Play();
         }
-        else
+        aggressorGameObject.SetActive(false);
+
+        // Configurar la pregunta en la UI
+        string selectedLanguage = PlayerPrefs.GetString("language", "es");
+        bool isEnglish = selectedLanguage == "en";
+
+        // Asignar texto en base al idioma
+        questionText.text = isEnglish ? questionTextEnglish : questionString;
+        timeLeftText.text = isEnglish ? "Time left:" : "Tiempo restante:";
+
+        // Reproducir audio si hay clip asignado
+        audioSource.clip = isEnglish ? audioEnglish : initialAudioClip;
+        if (audioSource.clip != null)
+            audioSource.Play();
+
+        // Inicializar pantalla
+        likertPanel.SetActive(true);
+        confirmButton.interactable = false;
+        selectedEmotions.Clear();
+        answerConfirmed = false;
+
+        currentTimeRemaining = maxTime;
+        StartCoroutine(StartTimer());
+
+        // Configurar botones
+        for (int i = 0; i < emotionButtons.Length; i++)
         {
-            Debug.LogWarning("⚠️ FormularioManager.Instance es null. No se pudo guardar la respuesta por timeout.");
+            int index = i;
+            emotionButtons[i].onClick.RemoveAllListeners();
+            emotionButtons[i].onClick.AddListener(() => ToggleEmotion(index));
+            emotionButtons[i].interactable = true;
+            emotionButtons[i].image.color = Color.white;
         }
-    }
 
-    if (aggressorGameObject != null && reactivateAggressor)
-    {
-        aggressorGameObject.SetActive(true);
-    }
+        confirmButton.onClick.RemoveAllListeners();
+        confirmButton.onClick.AddListener(() => StartCoroutine(ConfirmAnswer()));
+        yield return new WaitUntil(() => answerConfirmed || currentTimeRemaining <= 0);
+        if (!answerConfirmed)
+        {
+            answerConfirmed = true;
 
-    likertPanel.SetActive(false);
-    onQuestionAnswered?.Invoke();
-}
+            string selectedScenario = PlayerPrefs.GetString("SelectedScenario", "Faena");
+            string genderKey = isMaleQuestion ? "Masculino" : "Femenino";
+            string jugadorKey = $"Jugador {genderKey} {selectedScenario}";
+
+            string escenaKey = !string.IsNullOrEmpty(questionSceneJsonData) ? questionSceneJsonData : "Escena Desconocida";
+            string questionKey = !string.IsNullOrEmpty(questionJsonData) ? questionJsonData : "Pregunta Desconocida";
+
+            if (FormularioManager.Instance != null)
+            {
+                if (FormularioManager.Instance.formulario.fields == null)
+                    FormularioManager.Instance.formulario.fields = new Dictionary<string, object>();
+
+                if (!FormularioManager.Instance.formulario.fields.ContainsKey(jugadorKey))
+                    FormularioManager.Instance.UpdateAnswer(jugadorKey, new Dictionary<string, object>());
+
+                var jugadorDict = (Dictionary<string, object>)FormularioManager.Instance.formulario.fields[jugadorKey];
+
+                if (!jugadorDict.ContainsKey(escenaKey))
+                    jugadorDict[escenaKey] = new Dictionary<string, object>();
+
+                var escenaDict = (Dictionary<string, object>)jugadorDict[escenaKey];
+                escenaDict[questionKey] = "Fuera de tiempo";
+
+                jugadorDict[escenaKey] = escenaDict;
+                FormularioManager.Instance.UpdateAnswer(jugadorKey, jugadorDict);
+                FormularioManager.Instance.SaveFormulario();
+
+                Debug.Log($"⏰ Tiempo agotado. Registrada respuesta automática: {jugadorKey} -> {escenaKey} -> {questionKey}: Fuera de tiempo");
+            }
+            else
+            {
+                Debug.LogWarning("⚠️ FormularioManager.Instance es null. No se pudo guardar la respuesta por timeout.");
+            }
+        }
+
+        if (aggressorGameObject != null && reactivateAggressor)
+        {
+            aggressorGameObject.SetActive(true);
+        }
+
+        likertPanel.SetActive(false);
+        onQuestionAnswered?.Invoke();
+    }
     private IEnumerator StartTimer()
     {
         while (currentTimeRemaining > 0 && !answerConfirmed)
@@ -270,7 +270,7 @@ public class LikertStep : MonoBehaviour,IStep
 
         yield return null;
     }
-    
+
     public void SetQuestion(string newQuestionSpanish, string newQuestionEnglish)
     {
         questionString = newQuestionSpanish;

@@ -26,21 +26,22 @@ public class PlaySoundStep : MonoBehaviour,IStep
     [SerializeField] private bool isSkippable = false;
     [SerializeField] private float skipDelay = 5f; // tiempo para saltar si no hay interacción
     private Coroutine skipCoroutine;
-
+    
       private AudioClip SelectedClip
     {
         get
         {
-            string selectedLanguage = PlayerPrefs.GetString("SelectedLanguage", "Spanish");
-            string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile"); // Default Chile
+            // Usamos la clave "language" con valores "en" o "es", como en los otros scripts.
+            string selectedLanguage = PlayerPrefs.GetString("language", "es");
 
-            // Solo usar el audio en inglés si es Australia + Inglés
-            if (selectedLanguage == "English" && selectedCountry == "Australia" && clipToPlayEnglish != null)
+            // La decisión ahora solo depende del idioma seleccionado, no del país.
+            if (selectedLanguage == "en" && clipToPlayEnglish != null)
             {
                 return clipToPlayEnglish;
             }
             else
             {
+                // Si no es inglés o el clip de inglés no existe, usa español.
                 return clipToPlaySpanish;
             }
         }
@@ -73,8 +74,14 @@ public class PlaySoundStep : MonoBehaviour,IStep
         audioSource.loop = false;
         audioSource.clip = SelectedClip;
         audioSource.Play();
+        string selectedLanguage = PlayerPrefs.GetString("language", "es");
+        Debug.Log(selectedLanguage);
+        // Espera a que termine el audio más un tiempo extra
+        if (audioSource.clip != null)
+        {
+            yield return new WaitForSeconds(audioSource.clip.length + extraWaitTime);
+        }
 
-        yield return new WaitForSeconds(SelectedClip.length + extraWaitTime);
 
         if (requiresTrigger)
         {
@@ -117,7 +124,7 @@ public class PlaySoundStep : MonoBehaviour,IStep
             Debug.Log("Tiempo de espera agotado, saltando al siguiente paso.");
             waitingForTrigger = false;
         }
-    }   
+    }
 
     private void TryToContinue(Collider other)
     {

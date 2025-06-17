@@ -11,7 +11,7 @@ public class SimpleTimer : MonoBehaviour
 
     void Start()
     {
-        FormularioManager.Instance.SendFormulario();
+        FormularioManager.Instance?.SendFormulario();
         // 🔹 Escuchar el evento cuando el formulario se haya enviado
         FormularioManager.Instance.onFormularioEnviado.AddListener(StartTimer);
     }

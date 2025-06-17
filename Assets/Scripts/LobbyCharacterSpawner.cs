@@ -21,14 +21,24 @@ public class LobbyCharacterSpawner : MonoBehaviour
 
     void Awake()
     {
-        // Activar todos los personajes temporalmente para inicializar
         foreach (var entry in charactersPorPais)
         {
+            if (entry == null)
+            {
+                Debug.LogError("¡Una entrada en charactersPorPais es null! Revisa el Inspector.");
+                continue;
+            }
+
+            if (entry.corporativo == null)
+                Debug.LogWarning($"[{entry.countryName}] no tiene prefab de Corporativo");
+
+            if (entry.faena == null)
+                Debug.LogWarning($"[{entry.countryName}] no tiene prefab de Faena");
+
             entry.corporativo?.SetActive(true);
             entry.faena?.SetActive(true);
         }
 
-        // Luego desactivarlos
         DisableAllCharacters();
     }
 

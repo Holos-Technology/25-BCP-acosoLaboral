@@ -22,23 +22,33 @@ public class NarrationStep : MonoBehaviour, IStep
 
 
     public IEnumerator Execute()
-    { 
-        if (playerTransform == null || audioSource == null || narrationAudio == null)
+    {
+        if (playerTransform == null || audioSource == null)
         {
             Debug.LogWarning("Faltan referencias en NarrationStep.");
             yield break;
         }
 
         playerTransform.position = startPosition;
-        string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile");
-        audioSource.clip = selectedCountry == "Australia" ? englishNarrationAudio : narrationAudio;      
-        audioSource.Play();
-        yield return new WaitForSeconds(narrationAudio.length);
+        string selectedLanguage = PlayerPrefs.GetString("language", "es");
+        bool isEnglish = selectedLanguage == "en";
+
+        AudioClip clipToPlay = isEnglish ? englishNarrationAudio : narrationAudio;
+
+        if (clipToPlay != null)
+        {
+            audioSource.clip = clipToPlay;
+            audioSource.Play();
+            yield return new WaitForSeconds(clipToPlay.length);
+        }
     }
 
     public void LoadText()
     {
-        string selectedCountry = PlayerPrefs.GetString("SelectedCountry", "Chile");
-        narrationtext.text = selectedCountry == "Australia" ? englishNarrationText : narrationText;
+        if (narrationtext != null)
+        {
+            string selectedLanguage = PlayerPrefs.GetString("language", "es");
+            narrationtext.text = selectedLanguage == "en" ? englishNarrationText : narrationText;
+        }
     }
 }
