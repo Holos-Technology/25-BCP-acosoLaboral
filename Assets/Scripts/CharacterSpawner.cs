@@ -51,7 +51,7 @@ public class CharacterSpawner : MonoBehaviour
 
         // Activar el personaje correcto
         selectedCharacter.SetActive(true);
-        StartCoroutine(ResetOVRBodyNextFrame(selectedCharacter));
+       // StartCoroutine(ResetOVRBodyNextFrame(selectedCharacter));
 
         // Destruir los personajes no seleccionados
         DestroyUnusedCharacters(selectedCharacter);
