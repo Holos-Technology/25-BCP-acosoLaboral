@@ -30,6 +30,7 @@ public class StartingCanvas : MonoBehaviour
 
     [SerializeField] private TMP_Dropdown languageDropdown;
     [SerializeField] private Button confirmLanguageButton;
+    [SerializeField] private TMP_Text confirmLanguageTextButton;
     [SerializeField] private Button backLanguageButton;
 
     void Start()
@@ -60,7 +61,21 @@ public class StartingCanvas : MonoBehaviour
         }
 
         PopulateIdentifierDropdown();
+        languageDropdown.onValueChanged.AddListener(ChangeLanguage);
 
+    }
+
+    void ChangeLanguage(int index)
+    {
+        switch (index)
+        {
+            case 0:
+                confirmLanguageTextButton.text = "CONTINUAR";
+                break;
+            case 1:
+                confirmLanguageTextButton.text = "CONTINUE";
+                break;
+        }
     }
 
     void ConfirmLanguageSelection()
